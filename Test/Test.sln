@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test.csproj", "{8CAE2E04-AD4D-4F8B-B50E-2DC6E809131A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreNLPClient.Net", "..\CoreNLPClient.Net\CoreNLPClient.Net.csproj", "{7CC8D312-14C8-477D-9034-689EECC89AB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CAE2E04-AD4D-4F8B-B50E-2DC6E809131A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CAE2E04-AD4D-4F8B-B50E-2DC6E809131A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CAE2E04-AD4D-4F8B-B50E-2DC6E809131A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CAE2E04-AD4D-4F8B-B50E-2DC6E809131A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC8D312-14C8-477D-9034-689EECC89AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC8D312-14C8-477D-9034-689EECC89AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC8D312-14C8-477D-9034-689EECC89AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC8D312-14C8-477D-9034-689EECC89AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A43EC404-8D70-41DA-8060-B78F08DB6181}
+	EndGlobalSection
+EndGlobal
