@@ -13,7 +13,8 @@ To keep things simple, I try to mimic the *Stanza* interface and implementation 
 ## Compatibility
 
 The library has been developed and tested on **Windows and Linux**, using **.NET Core 3.1**, but should work with older versions although I haven’t tried.
-The targeted version has been **CoreNLP 4.0.0** but, again, it should work with previous releases.
+
+The targeted version has been **CoreNLP 4.0.0** but, again, it should work with previous releases. The server needs **Java 8** to run.
 
 Furthermore, it should also work with **.NET Framework 4.7.2** and above.
 
@@ -35,6 +36,8 @@ Two projects are available in the repository. *CoreNLPClient.Net.csproj* is the 
 
 * A *CORENLP_HOME* (or *CLASSPATH*) environment variable set, pointing to the folder containing *CoreNLP jar files*. (For Linux users, a Shell Variable won't be enough, you need a full Environment Variable, see [this](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/))
 * To explicitly use classpath parameter in CoreNLP constructor
+
+Assuming all dependencies have been satisfied (see compatibility above), Linux users just need to browse to Test folder and type `dotnet run`. Windows users, you can load *Test.sln* in *Visual Studio 2019 Community Edition*
 
 The following is a comparison of an example using Stanza and CoreNlpClient.Net (click to enlarge)
 
