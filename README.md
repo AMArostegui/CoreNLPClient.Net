@@ -9,3 +9,10 @@ According the project documentation, using a client talking to a server instance
 There are several client implementations in many programming languages. The official from the Stanford NLP Group is a Python project called Stanza. https://stanfordnlp.github.io/stanza/index.html
 
 To keep things simple, I try to mimic the Stanza interface and implementation whenever possible.
+
+## Compatibility
+
+The library has been developed and tested on **Windows and Linux**, using **.NET Core 3.1**, but should work with older versions although I haven’t tried.
+The targeted version has been **CoreNLP 4.0.0** but, again, it should work with previous releases.
+
+Furthermore, it should also work with **.NET Framework 4.7.2** and above.
