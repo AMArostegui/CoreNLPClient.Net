@@ -14,7 +14,7 @@ To keep things simple, I try to mimic the *Stanza* interface and implementation 
 
 The library has been developed and tested on **Windows and Linux**, using **.NET Core 3.1**, but should work with older versions although I haven’t tried.
 
-The targeted version has been **CoreNLP 4.0.0** but, again, it should work with previous releases. The server needs **Java 8** to run.
+Target version is **CoreNLP >= 4.0.0** but I think it should work with previous releases. The server needs **Java 8** to run.
 
 Furthermore, it should also work with **.NET Framework 4.7.2** and above.
 
