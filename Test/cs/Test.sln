@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test.csproj", "{8CAE2E04-AD4D-4F8B-B50E-2DC6E809131A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7CC8D312-14C8-477D-9034-689EECC89AB9} = {7CC8D312-14C8-477D-9034-689EECC89AB9}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreNLPClient.Net", "..\CoreNLPClient.Net\CoreNLPClient.Net.csproj", "{7CC8D312-14C8-477D-9034-689EECC89AB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreNLPClient.Net", "..\..\CoreNLPClient.Net\CoreNLPClient.Net.csproj", "{7CC8D312-14C8-477D-9034-689EECC89AB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

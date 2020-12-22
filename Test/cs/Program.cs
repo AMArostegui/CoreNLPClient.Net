@@ -18,6 +18,7 @@ namespace Test
             var text = "Chris Manning is a nice person. Chris wrote a simple sentence. He also gives oranges to people.";
 
             using (var client = new CoreNLPClient(
+                startServer: false,
                 annotators: new string[] { "tokenize", "ssplit", "pos", "lemma", "ner", "parse", "depparse", "coref" },
                 timeout: 30000,
                 memory: "8G"))
@@ -67,20 +68,21 @@ namespace Test
                 var pattern = "([ner: PERSON]+) /wrote/ /an?/ []{0,3} /sentence|article/";
                 var matches = client.TokensRegex(text, pattern);
 
-                Debug.Assert((int)matches["sentences"].Count == 3);
-                Debug.Assert((int)matches["sentences"][1]["length"] == 1);
-                Debug.Assert((string)matches["sentences"][1]["0"]["text"] == "Chris wrote a simple sentence");
-                Debug.Assert((string)matches["sentences"][1]["0"]["1"]["text"] == "Chris");
+                Console.WriteLine((int)matches["sentences"].Count); // prints: 3
+                Console.WriteLine((int)matches["sentences"][1]["length"]); // prints: 1
+                Console.WriteLine((string)matches["sentences"][1]["0"]["text"]);
+                Console.WriteLine((string)matches["sentences"][1]["0"]["1"]["text"]);
 
-                pattern = "{word:wrote} >nsubj {}=subject >dobj {}=object";
+                pattern = "{word:wrote} >nsubj {}=subject >obj {}=object";
                 matches = client.Semgrex(text, pattern);
-                Debug.Assert((int)matches["sentences"].Count == 3);
-                Debug.Assert((int)matches["sentences"][1]["length"] == 0);
+                Console.WriteLine((int)matches["sentences"].Count); // prints: 3
+                Console.WriteLine((int)matches["sentences"][1]["length"]); // prints: 1
 
                 pattern = "NP";
                 matches = client.TRegex(text, pattern);
                 foreach (var match in matches)
                     Console.WriteLine(match);
+                Console.WriteLine(matches["sentences"][1]["1"]["match"]); // prints: "(NP (DT a) (JJ simple) (NN sentence))\n"
             }
         }
 
