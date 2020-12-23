@@ -41,7 +41,7 @@ namespace Edu.Stanford.Nlp.Pipeline {
             "b3JlZk1lbnRpb25Bbm5vdGF0aW9uGA8gASgIEhoKEmhhc0NvcmVmQW5ub3Rh",
             "dGlvbhgQIAEoCBIrCiNjb3JlZk1lbnRpb25Ub0VudGl0eU1lbnRpb25NYXBw",
             "aW5ncxgRIAMoBRIrCiNlbnRpdHlNZW50aW9uVG9Db3JlZk1lbnRpb25NYXBw",
-            "aW5ncxgSIAMoBSoFCGQQgAIijg8KCFNlbnRlbmNlEi8KBXRva2VuGAEgAygL",
+            "aW5ncxgSIAMoBSoFCGQQgAIi8w8KCFNlbnRlbmNlEi8KBXRva2VuGAEgAygL",
             "MiAuZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5Ub2tlbhIYChB0b2tlbk9m",
             "ZnNldEJlZ2luGAIgAigNEhYKDnRva2VuT2Zmc2V0RW5kGAMgAigNEhUKDXNl",
             "bnRlbmNlSW5kZXgYBCABKA0SHAoUY2hhcmFjdGVyT2Zmc2V0QmVnaW4YBSAB",
@@ -84,175 +84,207 @@ namespace Edu.Stanford.Nlp.Pipeline {
             "YXNFbnRpdHlNZW50aW9uc0Fubm90YXRpb24YQSABKAgSHwoXaGFzS0JQVHJp",
             "cGxlc0Fubm90YXRpb24YRCABKAgSIgoaaGFzT3BlbmllVHJpcGxlc0Fubm90",
             "YXRpb24YRSABKAgSFAoMY2hhcHRlckluZGV4GEIgASgNEhYKDnBhcmFncmFw",
-            "aEluZGV4GEMgASgNKgUIZBCAAiKaDAoFVG9rZW4SDAoEd29yZBgBIAEoCRIL",
-            "CgNwb3MYAiABKAkSDQoFdmFsdWUYAyABKAkSEAoIY2F0ZWdvcnkYBCABKAkS",
-            "DgoGYmVmb3JlGAUgASgJEg0KBWFmdGVyGAYgASgJEhQKDG9yaWdpbmFsVGV4",
-            "dBgHIAEoCRILCgNuZXIYCCABKAkSEQoJY29hcnNlTkVSGD4gASgJEhYKDmZp",
-            "bmVHcmFpbmVkTkVSGD8gASgJEhUKDW5lckxhYmVsUHJvYnMYQiADKAkSFQoN",
-            "bm9ybWFsaXplZE5FUhgJIAEoCRINCgVsZW1tYRgKIAEoCRIRCgliZWdpbkNo",
-            "YXIYCyABKA0SDwoHZW5kQ2hhchgMIAEoDRIRCgl1dHRlcmFuY2UYDSABKA0S",
-            "DwoHc3BlYWtlchgOIAEoCRISCgpiZWdpbkluZGV4GA8gASgNEhAKCGVuZElu",
-            "ZGV4GBAgASgNEhcKD3Rva2VuQmVnaW5JbmRleBgRIAEoDRIVCg10b2tlbkVu",
-            "ZEluZGV4GBIgASgNEjQKCnRpbWV4VmFsdWUYEyABKAsyIC5lZHUuc3RhbmZv",
-            "cmQubmxwLnBpcGVsaW5lLlRpbWV4EhUKDWhhc1htbENvbnRleHQYFSABKAgS",
-            "EgoKeG1sQ29udGV4dBgWIAMoCRIWCg5jb3JlZkNsdXN0ZXJJRBgXIAEoDRIO",
-            "CgZhbnN3ZXIYGCABKAkSFQoNaGVhZFdvcmRJbmRleBgaIAEoDRI1CghvcGVy",
-            "YXRvchgbIAEoCzIjLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuT3BlcmF0",
-            "b3ISNQoIcG9sYXJpdHkYHCABKAsyIy5lZHUuc3RhbmZvcmQubmxwLnBpcGVs",
-            "aW5lLlBvbGFyaXR5EhQKDHBvbGFyaXR5X2RpchgnIAEoCRItCgRzcGFuGB0g",
-            "ASgLMh8uZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5TcGFuEhEKCXNlbnRp",
-            "bWVudBgeIAEoCRIWCg5xdW90YXRpb25JbmRleBgfIAEoBRJCCg5jb25sbFVG",
-            "ZWF0dXJlcxggIAEoCzIqLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuTWFw",
-            "U3RyaW5nU3RyaW5nEhEKCWNvYXJzZVRhZxghIAEoCRI4Cg9jb25sbFVUb2tl",
-            "blNwYW4YIiABKAsyHy5lZHUuc3RhbmZvcmQubmxwLnBpcGVsaW5lLlNwYW4S",
-            "EgoKY29ubGxVTWlzYxgjIAEoCRJHChNjb25sbFVTZWNvbmRhcnlEZXBzGCQg",
-            "ASgLMiouZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5NYXBTdHJpbmdTdHJp",
-            "bmcSFwoPd2lraXBlZGlhRW50aXR5GCUgASgJEhEKCWlzTmV3bGluZRgmIAEo",
-            "CBIOCgZnZW5kZXIYMyABKAkSEAoIdHJ1ZUNhc2UYNCABKAkSFAoMdHJ1ZUNh",
-            "c2VUZXh0GDUgASgJEhMKC2NoaW5lc2VDaGFyGDYgASgJEhIKCmNoaW5lc2VT",
-            "ZWcYNyABKAkSFgoOY2hpbmVzZVhNTENoYXIYPCABKAkSEwoLc2VjdGlvbk5h",
-            "bWUYOCABKAkSFQoNc2VjdGlvbkF1dGhvchg5IAEoCRITCgtzZWN0aW9uRGF0",
-            "ZRg6IAEoCRIXCg9zZWN0aW9uRW5kTGFiZWwYOyABKAkSDgoGcGFyZW50GD0g",
-            "ASgJEhkKEWNvcmVmTWVudGlvbkluZGV4GEAgAygNEhoKEmVudGl0eU1lbnRp",
-            "b25JbmRleBhBIAEoDRINCgVpc01XVBhDIAEoCBISCgppc0ZpcnN0TVdUGEQg",
-            "ASgIEg8KB213dFRleHQYRSABKAkSFAoMbnVtZXJpY1ZhbHVlGEYgASgEEhMK",
-            "C251bWVyaWNUeXBlGEcgASgJEh0KFW51bWVyaWNDb21wb3NpdGVWYWx1ZRhI",
-            "IAEoBBIcChRudW1lcmljQ29tcG9zaXRlVHlwZRhJIAEoCRIcChRjb2RlcG9p",
-            "bnRPZmZzZXRCZWdpbhhKIAEoDRIaChJjb2RlcG9pbnRPZmZzZXRFbmQYSyAB",
-            "KA0qBQhkEIACIuQDCgVRdW90ZRIMCgR0ZXh0GAEgASgJEg0KBWJlZ2luGAIg",
-            "ASgNEgsKA2VuZBgDIAEoDRIVCg1zZW50ZW5jZUJlZ2luGAUgASgNEhMKC3Nl",
-            "bnRlbmNlRW5kGAYgASgNEhIKCnRva2VuQmVnaW4YByABKA0SEAoIdG9rZW5F",
-            "bmQYCCABKA0SDQoFZG9jaWQYCSABKAkSDQoFaW5kZXgYCiABKA0SDgoGYXV0",
-            "aG9yGAsgASgJEg8KB21lbnRpb24YDCABKAkSFAoMbWVudGlvbkJlZ2luGA0g",
-            "ASgNEhIKCm1lbnRpb25FbmQYDiABKA0SEwoLbWVudGlvblR5cGUYDyABKAkS",
-            "FAoMbWVudGlvblNpZXZlGBAgASgJEg8KB3NwZWFrZXIYESABKAkSFAoMc3Bl",
-            "YWtlclNpZXZlGBIgASgJEhgKEGNhbm9uaWNhbE1lbnRpb24YEyABKAkSHQoV",
-            "Y2Fub25pY2FsTWVudGlvbkJlZ2luGBQgASgNEhsKE2Nhbm9uaWNhbE1lbnRp",
-            "b25FbmQYFSABKA0STgoaYXR0cmlidXRpb25EZXBlbmRlbmN5R3JhcGgYFiAB",
-            "KAsyKi5lZHUuc3RhbmZvcmQubmxwLnBpcGVsaW5lLkRlcGVuZGVuY3lHcmFw",
-            "aCLHAQoJUGFyc2VUcmVlEjMKBWNoaWxkGAEgAygLMiQuZWR1LnN0YW5mb3Jk",
-            "Lm5scC5waXBlbGluZS5QYXJzZVRyZWUSDQoFdmFsdWUYAiABKAkSFwoPeWll",
-            "bGRCZWdpbkluZGV4GAMgASgNEhUKDXlpZWxkRW5kSW5kZXgYBCABKA0SDQoF",
-            "c2NvcmUYBSABKAESNwoJc2VudGltZW50GAYgASgOMiQuZWR1LnN0YW5mb3Jk",
-            "Lm5scC5waXBlbGluZS5TZW50aW1lbnQilgMKD0RlcGVuZGVuY3lHcmFwaBI9",
-            "CgRub2RlGAEgAygLMi8uZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5EZXBl",
-            "bmRlbmN5R3JhcGguTm9kZRI9CgRlZGdlGAIgAygLMi8uZWR1LnN0YW5mb3Jk",
-            "Lm5scC5waXBlbGluZS5EZXBlbmRlbmN5R3JhcGguRWRnZRIQCgRyb290GAMg",
-            "AygNQgIQARpECgROb2RlEhUKDXNlbnRlbmNlSW5kZXgYASACKA0SDQoFaW5k",
-            "ZXgYAiACKA0SFgoOY29weUFubm90YXRpb24YAyABKA0arAEKBEVkZ2USDgoG",
-            "c291cmNlGAEgAigNEg4KBnRhcmdldBgCIAIoDRILCgNkZXAYAyABKAkSDwoH",
-            "aXNFeHRyYRgEIAEoCBISCgpzb3VyY2VDb3B5GAUgASgNEhIKCnRhcmdldENv",
-            "cHkYBiABKA0SPgoIbGFuZ3VhZ2UYByABKA4yIy5lZHUuc3RhbmZvcmQubmxw",
-            "LnBpcGVsaW5lLkxhbmd1YWdlOgdVbmtub3duIsYCCgpDb3JlZkNoYWluEg8K",
-            "B2NoYWluSUQYASACKAUSQwoHbWVudGlvbhgCIAMoCzIyLmVkdS5zdGFuZm9y",
-            "ZC5ubHAucGlwZWxpbmUuQ29yZWZDaGFpbi5Db3JlZk1lbnRpb24SFgoOcmVw",
-            "cmVzZW50YXRpdmUYAyACKA0ayQEKDENvcmVmTWVudGlvbhIRCgltZW50aW9u",
-            "SUQYASABKAUSEwoLbWVudGlvblR5cGUYAiABKAkSDgoGbnVtYmVyGAMgASgJ",
-            "Eg4KBmdlbmRlchgEIAEoCRIPCgdhbmltYWN5GAUgASgJEhIKCmJlZ2luSW5k",
-            "ZXgYBiABKA0SEAoIZW5kSW5kZXgYByABKA0SEQoJaGVhZEluZGV4GAkgASgN",
-            "EhUKDXNlbnRlbmNlSW5kZXgYCiABKA0SEAoIcG9zaXRpb24YCyABKA0i7wgK",
-            "B01lbnRpb24SEQoJbWVudGlvbklEGAEgASgFEhMKC21lbnRpb25UeXBlGAIg",
-            "ASgJEg4KBm51bWJlchgDIAEoCRIOCgZnZW5kZXIYBCABKAkSDwoHYW5pbWFj",
-            "eRgFIAEoCRIOCgZwZXJzb24YBiABKAkSEgoKc3RhcnRJbmRleBgHIAEoDRIQ",
-            "CghlbmRJbmRleBgJIAEoDRIRCgloZWFkSW5kZXgYCiABKAUSEgoKaGVhZFN0",
-            "cmluZxgLIAEoCRIRCgluZXJTdHJpbmcYDCABKAkSEwoLb3JpZ2luYWxSZWYY",
-            "DSABKAUSGgoSZ29sZENvcmVmQ2x1c3RlcklEGA4gASgFEhYKDmNvcmVmQ2x1",
-            "c3RlcklEGA8gASgFEhIKCm1lbnRpb25OdW0YECABKAUSDwoHc2VudE51bRgR",
-            "IAEoBRINCgV1dHRlchgSIAEoBRIRCglwYXJhZ3JhcGgYEyABKAUSEQoJaXNT",
-            "dWJqZWN0GBQgASgIEhYKDmlzRGlyZWN0T2JqZWN0GBUgASgIEhgKEGlzSW5k",
-            "aXJlY3RPYmplY3QYFiABKAgSGwoTaXNQcmVwb3NpdGlvbk9iamVjdBgXIAEo",
-            "CBIPCgdoYXNUd2luGBggASgIEg8KB2dlbmVyaWMYGSABKAgSEwoLaXNTaW5n",
-            "bGV0b24YGiABKAgSGgoSaGFzQmFzaWNEZXBlbmRlbmN5GBsgASgIEh0KFWhh",
-            "c0VuaGFuY2VkRGVwZW5lZG5jeRgcIAEoCBIbChNoYXNDb250ZXh0UGFyc2VU",
-            "cmVlGB0gASgIEj8KD2hlYWRJbmRleGVkV29yZBgeIAEoCzImLmVkdS5zdGFu",
-            "Zm9yZC5ubHAucGlwZWxpbmUuSW5kZXhlZFdvcmQSPQoNZGVwZW5kaW5nVmVy",
-            "YhgfIAEoCzImLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuSW5kZXhlZFdv",
-            "cmQSOAoIaGVhZFdvcmQYICABKAsyJi5lZHUuc3RhbmZvcmQubmxwLnBpcGVs",
-            "aW5lLkluZGV4ZWRXb3JkEjsKC3NwZWFrZXJJbmZvGCEgASgLMiYuZWR1LnN0",
-            "YW5mb3JkLm5scC5waXBlbGluZS5TcGVha2VySW5mbxI9Cg1zZW50ZW5jZVdv",
-            "cmRzGDIgAygLMiYuZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5JbmRleGVk",
-            "V29yZBI8CgxvcmlnaW5hbFNwYW4YMyADKAsyJi5lZHUuc3RhbmZvcmQubmxw",
-            "LnBpcGVsaW5lLkluZGV4ZWRXb3JkEhIKCmRlcGVuZGVudHMYNCADKAkSGQoR",
-            "cHJlcHJvY2Vzc2VkVGVybXMYNSADKAkSEwoLYXBwb3NpdGlvbnMYNiADKAUS",
-            "HAoUcHJlZGljYXRlTm9taW5hdGl2ZXMYNyADKAUSGAoQcmVsYXRpdmVQcm9u",
-            "b3Vucxg4IAMoBRITCgtsaXN0TWVtYmVycxg5IAMoBRIVCg1iZWxvbmdUb0xp",
-            "c3RzGDogAygFIlgKC0luZGV4ZWRXb3JkEhMKC3NlbnRlbmNlTnVtGAEgASgF",
-            "EhIKCnRva2VuSW5kZXgYAiABKAUSDQoFZG9jSUQYAyABKAUSEQoJY29weUNv",
-            "dW50GAQgASgNIjQKC1NwZWFrZXJJbmZvEhMKC3NwZWFrZXJOYW1lGAEgASgJ",
-            "EhAKCG1lbnRpb25zGAIgAygFIiIKBFNwYW4SDQoFYmVnaW4YASACKA0SCwoD",
-            "ZW5kGAIgAigNIncKBVRpbWV4Eg0KBXZhbHVlGAEgASgJEhAKCGFsdFZhbHVl",
-            "GAIgASgJEgwKBHRleHQYAyABKAkSDAoEdHlwZRgEIAEoCRILCgN0aWQYBSAB",
-            "KAkSEgoKYmVnaW5Qb2ludBgGIAEoDRIQCghlbmRQb2ludBgHIAEoDSLbAQoG",
-            "RW50aXR5EhEKCWhlYWRTdGFydBgGIAEoDRIPCgdoZWFkRW5kGAcgASgNEhMK",
-            "C21lbnRpb25UeXBlGAggASgJEhYKDm5vcm1hbGl6ZWROYW1lGAkgASgJEhYK",
-            "DmhlYWRUb2tlbkluZGV4GAogASgNEg8KB2NvcmVmSUQYCyABKAkSEAoIb2Jq",
-            "ZWN0SUQYASABKAkSEwoLZXh0ZW50U3RhcnQYAiABKA0SEQoJZXh0ZW50RW5k",
-            "GAMgASgNEgwKBHR5cGUYBCABKAkSDwoHc3VidHlwZRgFIAEoCSK3AQoIUmVs",
-            "YXRpb24SDwoHYXJnTmFtZRgGIAMoCRIuCgNhcmcYByADKAsyIS5lZHUuc3Rh",
-            "bmZvcmQubmxwLnBpcGVsaW5lLkVudGl0eRIRCglzaWduYXR1cmUYCCABKAkS",
+            "aEluZGV4GEMgASgNEj0KEGVuaGFuY2VkU2VudGVuY2UYRiABKAsyIy5lZHUu",
+            "c3RhbmZvcmQubmxwLnBpcGVsaW5lLlNlbnRlbmNlEg8KB3NwZWFrZXIYRyAB",
+            "KAkSEwoLc3BlYWtlclR5cGUYSCABKAkqBQhkEIACIsIMCgVUb2tlbhIMCgR3",
+            "b3JkGAEgASgJEgsKA3BvcxgCIAEoCRINCgV2YWx1ZRgDIAEoCRIQCghjYXRl",
+            "Z29yeRgEIAEoCRIOCgZiZWZvcmUYBSABKAkSDQoFYWZ0ZXIYBiABKAkSFAoM",
+            "b3JpZ2luYWxUZXh0GAcgASgJEgsKA25lchgIIAEoCRIRCgljb2Fyc2VORVIY",
+            "PiABKAkSFgoOZmluZUdyYWluZWRORVIYPyABKAkSFQoNbmVyTGFiZWxQcm9i",
+            "cxhCIAMoCRIVCg1ub3JtYWxpemVkTkVSGAkgASgJEg0KBWxlbW1hGAogASgJ",
+            "EhEKCWJlZ2luQ2hhchgLIAEoDRIPCgdlbmRDaGFyGAwgASgNEhEKCXV0dGVy",
+            "YW5jZRgNIAEoDRIPCgdzcGVha2VyGA4gASgJEhMKC3NwZWFrZXJUeXBlGE0g",
+            "ASgJEhIKCmJlZ2luSW5kZXgYDyABKA0SEAoIZW5kSW5kZXgYECABKA0SFwoP",
+            "dG9rZW5CZWdpbkluZGV4GBEgASgNEhUKDXRva2VuRW5kSW5kZXgYEiABKA0S",
+            "NAoKdGltZXhWYWx1ZRgTIAEoCzIgLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxp",
+            "bmUuVGltZXgSFQoNaGFzWG1sQ29udGV4dBgVIAEoCBISCgp4bWxDb250ZXh0",
+            "GBYgAygJEhYKDmNvcmVmQ2x1c3RlcklEGBcgASgNEg4KBmFuc3dlchgYIAEo",
+            "CRIVCg1oZWFkV29yZEluZGV4GBogASgNEjUKCG9wZXJhdG9yGBsgASgLMiMu",
+            "ZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5PcGVyYXRvchI1Cghwb2xhcml0",
+            "eRgcIAEoCzIjLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuUG9sYXJpdHkS",
+            "FAoMcG9sYXJpdHlfZGlyGCcgASgJEi0KBHNwYW4YHSABKAsyHy5lZHUuc3Rh",
+            "bmZvcmQubmxwLnBpcGVsaW5lLlNwYW4SEQoJc2VudGltZW50GB4gASgJEhYK",
+            "DnF1b3RhdGlvbkluZGV4GB8gASgFEkIKDmNvbmxsVUZlYXR1cmVzGCAgASgL",
+            "MiouZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5NYXBTdHJpbmdTdHJpbmcS",
+            "EQoJY29hcnNlVGFnGCEgASgJEjgKD2NvbmxsVVRva2VuU3BhbhgiIAEoCzIf",
+            "LmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuU3BhbhISCgpjb25sbFVNaXNj",
+            "GCMgASgJEkcKE2NvbmxsVVNlY29uZGFyeURlcHMYJCABKAsyKi5lZHUuc3Rh",
+            "bmZvcmQubmxwLnBpcGVsaW5lLk1hcFN0cmluZ1N0cmluZxIXCg93aWtpcGVk",
+            "aWFFbnRpdHkYJSABKAkSEQoJaXNOZXdsaW5lGCYgASgIEg4KBmdlbmRlchgz",
+            "IAEoCRIQCgh0cnVlQ2FzZRg0IAEoCRIUCgx0cnVlQ2FzZVRleHQYNSABKAkS",
+            "EwoLY2hpbmVzZUNoYXIYNiABKAkSEgoKY2hpbmVzZVNlZxg3IAEoCRIWCg5j",
+            "aGluZXNlWE1MQ2hhchg8IAEoCRIRCglhcmFiaWNTZWcYTCABKAkSEwoLc2Vj",
+            "dGlvbk5hbWUYOCABKAkSFQoNc2VjdGlvbkF1dGhvchg5IAEoCRITCgtzZWN0",
+            "aW9uRGF0ZRg6IAEoCRIXCg9zZWN0aW9uRW5kTGFiZWwYOyABKAkSDgoGcGFy",
+            "ZW50GD0gASgJEhkKEWNvcmVmTWVudGlvbkluZGV4GEAgAygNEhoKEmVudGl0",
+            "eU1lbnRpb25JbmRleBhBIAEoDRINCgVpc01XVBhDIAEoCBISCgppc0ZpcnN0",
+            "TVdUGEQgASgIEg8KB213dFRleHQYRSABKAkSFAoMbnVtZXJpY1ZhbHVlGEYg",
+            "ASgEEhMKC251bWVyaWNUeXBlGEcgASgJEh0KFW51bWVyaWNDb21wb3NpdGVW",
+            "YWx1ZRhIIAEoBBIcChRudW1lcmljQ29tcG9zaXRlVHlwZRhJIAEoCRIcChRj",
+            "b2RlcG9pbnRPZmZzZXRCZWdpbhhKIAEoDRIaChJjb2RlcG9pbnRPZmZzZXRF",
+            "bmQYSyABKA0qBQhkEIACIuQDCgVRdW90ZRIMCgR0ZXh0GAEgASgJEg0KBWJl",
+            "Z2luGAIgASgNEgsKA2VuZBgDIAEoDRIVCg1zZW50ZW5jZUJlZ2luGAUgASgN",
+            "EhMKC3NlbnRlbmNlRW5kGAYgASgNEhIKCnRva2VuQmVnaW4YByABKA0SEAoI",
+            "dG9rZW5FbmQYCCABKA0SDQoFZG9jaWQYCSABKAkSDQoFaW5kZXgYCiABKA0S",
+            "DgoGYXV0aG9yGAsgASgJEg8KB21lbnRpb24YDCABKAkSFAoMbWVudGlvbkJl",
+            "Z2luGA0gASgNEhIKCm1lbnRpb25FbmQYDiABKA0SEwoLbWVudGlvblR5cGUY",
+            "DyABKAkSFAoMbWVudGlvblNpZXZlGBAgASgJEg8KB3NwZWFrZXIYESABKAkS",
+            "FAoMc3BlYWtlclNpZXZlGBIgASgJEhgKEGNhbm9uaWNhbE1lbnRpb24YEyAB",
+            "KAkSHQoVY2Fub25pY2FsTWVudGlvbkJlZ2luGBQgASgNEhsKE2Nhbm9uaWNh",
+            "bE1lbnRpb25FbmQYFSABKA0STgoaYXR0cmlidXRpb25EZXBlbmRlbmN5R3Jh",
+            "cGgYFiABKAsyKi5lZHUuc3RhbmZvcmQubmxwLnBpcGVsaW5lLkRlcGVuZGVu",
+            "Y3lHcmFwaCLHAQoJUGFyc2VUcmVlEjMKBWNoaWxkGAEgAygLMiQuZWR1LnN0",
+            "YW5mb3JkLm5scC5waXBlbGluZS5QYXJzZVRyZWUSDQoFdmFsdWUYAiABKAkS",
+            "FwoPeWllbGRCZWdpbkluZGV4GAMgASgNEhUKDXlpZWxkRW5kSW5kZXgYBCAB",
+            "KA0SDQoFc2NvcmUYBSABKAESNwoJc2VudGltZW50GAYgASgOMiQuZWR1LnN0",
+            "YW5mb3JkLm5scC5waXBlbGluZS5TZW50aW1lbnQilgMKD0RlcGVuZGVuY3lH",
+            "cmFwaBI9CgRub2RlGAEgAygLMi8uZWR1LnN0YW5mb3JkLm5scC5waXBlbGlu",
+            "ZS5EZXBlbmRlbmN5R3JhcGguTm9kZRI9CgRlZGdlGAIgAygLMi8uZWR1LnN0",
+            "YW5mb3JkLm5scC5waXBlbGluZS5EZXBlbmRlbmN5R3JhcGguRWRnZRIQCgRy",
+            "b290GAMgAygNQgIQARpECgROb2RlEhUKDXNlbnRlbmNlSW5kZXgYASACKA0S",
+            "DQoFaW5kZXgYAiACKA0SFgoOY29weUFubm90YXRpb24YAyABKA0arAEKBEVk",
+            "Z2USDgoGc291cmNlGAEgAigNEg4KBnRhcmdldBgCIAIoDRILCgNkZXAYAyAB",
+            "KAkSDwoHaXNFeHRyYRgEIAEoCBISCgpzb3VyY2VDb3B5GAUgASgNEhIKCnRh",
+            "cmdldENvcHkYBiABKA0SPgoIbGFuZ3VhZ2UYByABKA4yIy5lZHUuc3RhbmZv",
+            "cmQubmxwLnBpcGVsaW5lLkxhbmd1YWdlOgdVbmtub3duIsYCCgpDb3JlZkNo",
+            "YWluEg8KB2NoYWluSUQYASACKAUSQwoHbWVudGlvbhgCIAMoCzIyLmVkdS5z",
+            "dGFuZm9yZC5ubHAucGlwZWxpbmUuQ29yZWZDaGFpbi5Db3JlZk1lbnRpb24S",
+            "FgoOcmVwcmVzZW50YXRpdmUYAyACKA0ayQEKDENvcmVmTWVudGlvbhIRCglt",
+            "ZW50aW9uSUQYASABKAUSEwoLbWVudGlvblR5cGUYAiABKAkSDgoGbnVtYmVy",
+            "GAMgASgJEg4KBmdlbmRlchgEIAEoCRIPCgdhbmltYWN5GAUgASgJEhIKCmJl",
+            "Z2luSW5kZXgYBiABKA0SEAoIZW5kSW5kZXgYByABKA0SEQoJaGVhZEluZGV4",
+            "GAkgASgNEhUKDXNlbnRlbmNlSW5kZXgYCiABKA0SEAoIcG9zaXRpb24YCyAB",
+            "KA0i7wgKB01lbnRpb24SEQoJbWVudGlvbklEGAEgASgFEhMKC21lbnRpb25U",
+            "eXBlGAIgASgJEg4KBm51bWJlchgDIAEoCRIOCgZnZW5kZXIYBCABKAkSDwoH",
+            "YW5pbWFjeRgFIAEoCRIOCgZwZXJzb24YBiABKAkSEgoKc3RhcnRJbmRleBgH",
+            "IAEoDRIQCghlbmRJbmRleBgJIAEoDRIRCgloZWFkSW5kZXgYCiABKAUSEgoK",
+            "aGVhZFN0cmluZxgLIAEoCRIRCgluZXJTdHJpbmcYDCABKAkSEwoLb3JpZ2lu",
+            "YWxSZWYYDSABKAUSGgoSZ29sZENvcmVmQ2x1c3RlcklEGA4gASgFEhYKDmNv",
+            "cmVmQ2x1c3RlcklEGA8gASgFEhIKCm1lbnRpb25OdW0YECABKAUSDwoHc2Vu",
+            "dE51bRgRIAEoBRINCgV1dHRlchgSIAEoBRIRCglwYXJhZ3JhcGgYEyABKAUS",
+            "EQoJaXNTdWJqZWN0GBQgASgIEhYKDmlzRGlyZWN0T2JqZWN0GBUgASgIEhgK",
+            "EGlzSW5kaXJlY3RPYmplY3QYFiABKAgSGwoTaXNQcmVwb3NpdGlvbk9iamVj",
+            "dBgXIAEoCBIPCgdoYXNUd2luGBggASgIEg8KB2dlbmVyaWMYGSABKAgSEwoL",
+            "aXNTaW5nbGV0b24YGiABKAgSGgoSaGFzQmFzaWNEZXBlbmRlbmN5GBsgASgI",
+            "Eh0KFWhhc0VuaGFuY2VkRGVwZW5lZG5jeRgcIAEoCBIbChNoYXNDb250ZXh0",
+            "UGFyc2VUcmVlGB0gASgIEj8KD2hlYWRJbmRleGVkV29yZBgeIAEoCzImLmVk",
+            "dS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuSW5kZXhlZFdvcmQSPQoNZGVwZW5k",
+            "aW5nVmVyYhgfIAEoCzImLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuSW5k",
+            "ZXhlZFdvcmQSOAoIaGVhZFdvcmQYICABKAsyJi5lZHUuc3RhbmZvcmQubmxw",
+            "LnBpcGVsaW5lLkluZGV4ZWRXb3JkEjsKC3NwZWFrZXJJbmZvGCEgASgLMiYu",
+            "ZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5TcGVha2VySW5mbxI9Cg1zZW50",
+            "ZW5jZVdvcmRzGDIgAygLMiYuZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5J",
+            "bmRleGVkV29yZBI8CgxvcmlnaW5hbFNwYW4YMyADKAsyJi5lZHUuc3RhbmZv",
+            "cmQubmxwLnBpcGVsaW5lLkluZGV4ZWRXb3JkEhIKCmRlcGVuZGVudHMYNCAD",
+            "KAkSGQoRcHJlcHJvY2Vzc2VkVGVybXMYNSADKAkSEwoLYXBwb3NpdGlvbnMY",
+            "NiADKAUSHAoUcHJlZGljYXRlTm9taW5hdGl2ZXMYNyADKAUSGAoQcmVsYXRp",
+            "dmVQcm9ub3Vucxg4IAMoBRITCgtsaXN0TWVtYmVycxg5IAMoBRIVCg1iZWxv",
+            "bmdUb0xpc3RzGDogAygFIlgKC0luZGV4ZWRXb3JkEhMKC3NlbnRlbmNlTnVt",
+            "GAEgASgFEhIKCnRva2VuSW5kZXgYAiABKAUSDQoFZG9jSUQYAyABKAUSEQoJ",
+            "Y29weUNvdW50GAQgASgNIjQKC1NwZWFrZXJJbmZvEhMKC3NwZWFrZXJOYW1l",
+            "GAEgASgJEhAKCG1lbnRpb25zGAIgAygFIiIKBFNwYW4SDQoFYmVnaW4YASAC",
+            "KA0SCwoDZW5kGAIgAigNIncKBVRpbWV4Eg0KBXZhbHVlGAEgASgJEhAKCGFs",
+            "dFZhbHVlGAIgASgJEgwKBHRleHQYAyABKAkSDAoEdHlwZRgEIAEoCRILCgN0",
+            "aWQYBSABKAkSEgoKYmVnaW5Qb2ludBgGIAEoDRIQCghlbmRQb2ludBgHIAEo",
+            "DSLbAQoGRW50aXR5EhEKCWhlYWRTdGFydBgGIAEoDRIPCgdoZWFkRW5kGAcg",
+            "ASgNEhMKC21lbnRpb25UeXBlGAggASgJEhYKDm5vcm1hbGl6ZWROYW1lGAkg",
+            "ASgJEhYKDmhlYWRUb2tlbkluZGV4GAogASgNEg8KB2NvcmVmSUQYCyABKAkS",
             "EAoIb2JqZWN0SUQYASABKAkSEwoLZXh0ZW50U3RhcnQYAiABKA0SEQoJZXh0",
-            "ZW50RW5kGAMgASgNEgwKBHR5cGUYBCABKAkSDwoHc3VidHlwZRgFIAEoCSKy",
-            "AQoIT3BlcmF0b3ISDAoEbmFtZRgBIAIoCRIbChNxdWFudGlmaWVyU3BhbkJl",
-            "Z2luGAIgAigFEhkKEXF1YW50aWZpZXJTcGFuRW5kGAMgAigFEhgKEHN1Ympl",
-            "Y3RTcGFuQmVnaW4YBCACKAUSFgoOc3ViamVjdFNwYW5FbmQYBSACKAUSFwoP",
-            "b2JqZWN0U3BhbkJlZ2luGAYgAigFEhUKDW9iamVjdFNwYW5FbmQYByACKAUi",
-            "qQQKCFBvbGFyaXR5EksKEnByb2plY3RFcXVpdmFsZW5jZRgBIAIoDjIvLmVk",
-            "dS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuTmF0dXJhbExvZ2ljUmVsYXRpb24S",
-            "UQoYcHJvamVjdEZvcndhcmRFbnRhaWxtZW50GAIgAigOMi8uZWR1LnN0YW5m",
-            "b3JkLm5scC5waXBlbGluZS5OYXR1cmFsTG9naWNSZWxhdGlvbhJRChhwcm9q",
-            "ZWN0UmV2ZXJzZUVudGFpbG1lbnQYAyACKA4yLy5lZHUuc3RhbmZvcmQubmxw",
-            "LnBpcGVsaW5lLk5hdHVyYWxMb2dpY1JlbGF0aW9uEkgKD3Byb2plY3ROZWdh",
-            "dGlvbhgEIAIoDjIvLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuTmF0dXJh",
-            "bExvZ2ljUmVsYXRpb24SSwoScHJvamVjdEFsdGVybmF0aW9uGAUgAigOMi8u",
-            "ZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5OYXR1cmFsTG9naWNSZWxhdGlv",
-            "bhJFCgxwcm9qZWN0Q292ZXIYBiACKA4yLy5lZHUuc3RhbmZvcmQubmxwLnBp",
-            "cGVsaW5lLk5hdHVyYWxMb2dpY1JlbGF0aW9uEkwKE3Byb2plY3RJbmRlcGVu",
-            "ZGVuY2UYByACKA4yLy5lZHUuc3RhbmZvcmQubmxwLnBpcGVsaW5lLk5hdHVy",
-            "YWxMb2dpY1JlbGF0aW9uIt0CCgpORVJNZW50aW9uEhUKDXNlbnRlbmNlSW5k",
-            "ZXgYASABKA0SJQoddG9rZW5TdGFydEluU2VudGVuY2VJbmNsdXNpdmUYAiAC",
-            "KA0SIwobdG9rZW5FbmRJblNlbnRlbmNlRXhjbHVzaXZlGAMgAigNEgsKA25l",
-            "chgEIAIoCRIVCg1ub3JtYWxpemVkTkVSGAUgASgJEhIKCmVudGl0eVR5cGUY",
-            "BiABKAkSLwoFdGltZXgYByABKAsyIC5lZHUuc3RhbmZvcmQubmxwLnBpcGVs",
-            "aW5lLlRpbWV4EhcKD3dpa2lwZWRpYUVudGl0eRgIIAEoCRIOCgZnZW5kZXIY",
-            "CSABKAkSGgoSZW50aXR5TWVudGlvbkluZGV4GAogASgNEiMKG2Nhbm9uaWNh",
-            "bEVudGl0eU1lbnRpb25JbmRleBgLIAEoDRIZChFlbnRpdHlNZW50aW9uVGV4",
-            "dBgMIAEoCSJZChBTZW50ZW5jZUZyYWdtZW50EhIKCnRva2VuSW5kZXgYASAD",
-            "KA0SDAoEcm9vdBgCIAEoDRIUCgxhc3N1bWVkVHJ1dGgYAyABKAgSDQoFc2Nv",
-            "cmUYBCABKAEiOgoNVG9rZW5Mb2NhdGlvbhIVCg1zZW50ZW5jZUluZGV4GAEg",
-            "ASgNEhIKCnRva2VuSW5kZXgYAiABKA0imgMKDlJlbGF0aW9uVHJpcGxlEg8K",
-            "B3N1YmplY3QYASABKAkSEAoIcmVsYXRpb24YAiABKAkSDgoGb2JqZWN0GAMg",
-            "ASgJEhIKCmNvbmZpZGVuY2UYBCABKAESPwoNc3ViamVjdFRva2VucxgNIAMo",
-            "CzIoLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuVG9rZW5Mb2NhdGlvbhJA",
-            "Cg5yZWxhdGlvblRva2VucxgOIAMoCzIoLmVkdS5zdGFuZm9yZC5ubHAucGlw",
-            "ZWxpbmUuVG9rZW5Mb2NhdGlvbhI+CgxvYmplY3RUb2tlbnMYDyADKAsyKC5l",
-            "ZHUuc3RhbmZvcmQubmxwLnBpcGVsaW5lLlRva2VuTG9jYXRpb24SOAoEdHJl",
-            "ZRgIIAEoCzIqLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuRGVwZW5kZW5j",
-            "eUdyYXBoEg4KBmlzdG1vZBgJIAEoCBIQCghwcmVmaXhCZRgKIAEoCBIQCghz",
-            "dWZmaXhCZRgLIAEoCBIQCghzdWZmaXhPZhgMIAEoCCItCg9NYXBTdHJpbmdT",
-            "dHJpbmcSCwoDa2V5GAEgAygJEg0KBXZhbHVlGAIgAygJIioKDE1hcEludFN0",
-            "cmluZxILCgNrZXkYASADKA0SDQoFdmFsdWUYAiADKAki/AEKB1NlY3Rpb24S",
-            "EQoJY2hhckJlZ2luGAEgAigNEg8KB2NoYXJFbmQYAiACKA0SDgoGYXV0aG9y",
-            "GAMgASgJEhcKD3NlbnRlbmNlSW5kZXhlcxgEIAMoDRIQCghkYXRldGltZRgF",
-            "IAEoCRIwCgZxdW90ZXMYBiADKAsyIC5lZHUuc3RhbmZvcmQubmxwLnBpcGVs",
-            "aW5lLlF1b3RlEhcKD2F1dGhvckNoYXJCZWdpbhgHIAEoDRIVCg1hdXRob3JD",
-            "aGFyRW5kGAggASgNEjAKBnhtbFRhZxgJIAIoCzIgLmVkdS5zdGFuZm9yZC5u",
-            "bHAucGlwZWxpbmUuVG9rZW4qowEKCExhbmd1YWdlEgsKB1Vua25vd24QABIH",
-            "CgNBbnkQARIKCgZBcmFiaWMQAhILCgdDaGluZXNlEAMSCwoHRW5nbGlzaBAE",
-            "EgoKBkdlcm1hbhAFEgoKBkZyZW5jaBAGEgoKBkhlYnJldxAHEgsKB1NwYW5p",
-            "c2gQCBIUChBVbml2ZXJzYWxFbmdsaXNoEAkSFAoQVW5pdmVyc2FsQ2hpbmVz",
-            "ZRAKKmgKCVNlbnRpbWVudBITCg9TVFJPTkdfTkVHQVRJVkUQABIRCg1XRUFL",
-            "X05FR0FUSVZFEAESCwoHTkVVVFJBTBACEhEKDVdFQUtfUE9TSVRJVkUQAxIT",
-            "Cg9TVFJPTkdfUE9TSVRJVkUQBCqTAQoUTmF0dXJhbExvZ2ljUmVsYXRpb24S",
-            "DwoLRVFVSVZBTEVOQ0UQABIWChJGT1JXQVJEX0VOVEFJTE1FTlQQARIWChJS",
-            "RVZFUlNFX0VOVEFJTE1FTlQQAhIMCghORUdBVElPThADEg8KC0FMVEVSTkFU",
-            "SU9OEAQSCQoFQ09WRVIQBRIQCgxJTkRFUEVOREVOQ0UQBkIqChllZHUuc3Rh",
-            "bmZvcmQubmxwLnBpcGVsaW5lQg1Db3JlTkxQUHJvdG9z"));
+            "ZW50RW5kGAMgASgNEgwKBHR5cGUYBCABKAkSDwoHc3VidHlwZRgFIAEoCSK3",
+            "AQoIUmVsYXRpb24SDwoHYXJnTmFtZRgGIAMoCRIuCgNhcmcYByADKAsyIS5l",
+            "ZHUuc3RhbmZvcmQubmxwLnBpcGVsaW5lLkVudGl0eRIRCglzaWduYXR1cmUY",
+            "CCABKAkSEAoIb2JqZWN0SUQYASABKAkSEwoLZXh0ZW50U3RhcnQYAiABKA0S",
+            "EQoJZXh0ZW50RW5kGAMgASgNEgwKBHR5cGUYBCABKAkSDwoHc3VidHlwZRgF",
+            "IAEoCSKyAQoIT3BlcmF0b3ISDAoEbmFtZRgBIAIoCRIbChNxdWFudGlmaWVy",
+            "U3BhbkJlZ2luGAIgAigFEhkKEXF1YW50aWZpZXJTcGFuRW5kGAMgAigFEhgK",
+            "EHN1YmplY3RTcGFuQmVnaW4YBCACKAUSFgoOc3ViamVjdFNwYW5FbmQYBSAC",
+            "KAUSFwoPb2JqZWN0U3BhbkJlZ2luGAYgAigFEhUKDW9iamVjdFNwYW5FbmQY",
+            "ByACKAUiqQQKCFBvbGFyaXR5EksKEnByb2plY3RFcXVpdmFsZW5jZRgBIAIo",
+            "DjIvLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuTmF0dXJhbExvZ2ljUmVs",
+            "YXRpb24SUQoYcHJvamVjdEZvcndhcmRFbnRhaWxtZW50GAIgAigOMi8uZWR1",
+            "LnN0YW5mb3JkLm5scC5waXBlbGluZS5OYXR1cmFsTG9naWNSZWxhdGlvbhJR",
+            "Chhwcm9qZWN0UmV2ZXJzZUVudGFpbG1lbnQYAyACKA4yLy5lZHUuc3RhbmZv",
+            "cmQubmxwLnBpcGVsaW5lLk5hdHVyYWxMb2dpY1JlbGF0aW9uEkgKD3Byb2pl",
+            "Y3ROZWdhdGlvbhgEIAIoDjIvLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUu",
+            "TmF0dXJhbExvZ2ljUmVsYXRpb24SSwoScHJvamVjdEFsdGVybmF0aW9uGAUg",
+            "AigOMi8uZWR1LnN0YW5mb3JkLm5scC5waXBlbGluZS5OYXR1cmFsTG9naWNS",
+            "ZWxhdGlvbhJFCgxwcm9qZWN0Q292ZXIYBiACKA4yLy5lZHUuc3RhbmZvcmQu",
+            "bmxwLnBpcGVsaW5lLk5hdHVyYWxMb2dpY1JlbGF0aW9uEkwKE3Byb2plY3RJ",
+            "bmRlcGVuZGVuY2UYByACKA4yLy5lZHUuc3RhbmZvcmQubmxwLnBpcGVsaW5l",
+            "Lk5hdHVyYWxMb2dpY1JlbGF0aW9uIt0CCgpORVJNZW50aW9uEhUKDXNlbnRl",
+            "bmNlSW5kZXgYASABKA0SJQoddG9rZW5TdGFydEluU2VudGVuY2VJbmNsdXNp",
+            "dmUYAiACKA0SIwobdG9rZW5FbmRJblNlbnRlbmNlRXhjbHVzaXZlGAMgAigN",
+            "EgsKA25lchgEIAIoCRIVCg1ub3JtYWxpemVkTkVSGAUgASgJEhIKCmVudGl0",
+            "eVR5cGUYBiABKAkSLwoFdGltZXgYByABKAsyIC5lZHUuc3RhbmZvcmQubmxw",
+            "LnBpcGVsaW5lLlRpbWV4EhcKD3dpa2lwZWRpYUVudGl0eRgIIAEoCRIOCgZn",
+            "ZW5kZXIYCSABKAkSGgoSZW50aXR5TWVudGlvbkluZGV4GAogASgNEiMKG2Nh",
+            "bm9uaWNhbEVudGl0eU1lbnRpb25JbmRleBgLIAEoDRIZChFlbnRpdHlNZW50",
+            "aW9uVGV4dBgMIAEoCSJZChBTZW50ZW5jZUZyYWdtZW50EhIKCnRva2VuSW5k",
+            "ZXgYASADKA0SDAoEcm9vdBgCIAEoDRIUCgxhc3N1bWVkVHJ1dGgYAyABKAgS",
+            "DQoFc2NvcmUYBCABKAEiOgoNVG9rZW5Mb2NhdGlvbhIVCg1zZW50ZW5jZUlu",
+            "ZGV4GAEgASgNEhIKCnRva2VuSW5kZXgYAiABKA0imgMKDlJlbGF0aW9uVHJp",
+            "cGxlEg8KB3N1YmplY3QYASABKAkSEAoIcmVsYXRpb24YAiABKAkSDgoGb2Jq",
+            "ZWN0GAMgASgJEhIKCmNvbmZpZGVuY2UYBCABKAESPwoNc3ViamVjdFRva2Vu",
+            "cxgNIAMoCzIoLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuVG9rZW5Mb2Nh",
+            "dGlvbhJACg5yZWxhdGlvblRva2VucxgOIAMoCzIoLmVkdS5zdGFuZm9yZC5u",
+            "bHAucGlwZWxpbmUuVG9rZW5Mb2NhdGlvbhI+CgxvYmplY3RUb2tlbnMYDyAD",
+            "KAsyKC5lZHUuc3RhbmZvcmQubmxwLnBpcGVsaW5lLlRva2VuTG9jYXRpb24S",
+            "OAoEdHJlZRgIIAEoCzIqLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuRGVw",
+            "ZW5kZW5jeUdyYXBoEg4KBmlzdG1vZBgJIAEoCBIQCghwcmVmaXhCZRgKIAEo",
+            "CBIQCghzdWZmaXhCZRgLIAEoCBIQCghzdWZmaXhPZhgMIAEoCCItCg9NYXBT",
+            "dHJpbmdTdHJpbmcSCwoDa2V5GAEgAygJEg0KBXZhbHVlGAIgAygJIioKDE1h",
+            "cEludFN0cmluZxILCgNrZXkYASADKA0SDQoFdmFsdWUYAiADKAki/AEKB1Nl",
+            "Y3Rpb24SEQoJY2hhckJlZ2luGAEgAigNEg8KB2NoYXJFbmQYAiACKA0SDgoG",
+            "YXV0aG9yGAMgASgJEhcKD3NlbnRlbmNlSW5kZXhlcxgEIAMoDRIQCghkYXRl",
+            "dGltZRgFIAEoCRIwCgZxdW90ZXMYBiADKAsyIC5lZHUuc3RhbmZvcmQubmxw",
+            "LnBpcGVsaW5lLlF1b3RlEhcKD2F1dGhvckNoYXJCZWdpbhgHIAEoDRIVCg1h",
+            "dXRob3JDaGFyRW5kGAggASgNEjAKBnhtbFRhZxgJIAIoCzIgLmVkdS5zdGFu",
+            "Zm9yZC5ubHAucGlwZWxpbmUuVG9rZW4i5AEKDlNlbWdyZXhSZXF1ZXN0Eg8K",
+            "B3NlbWdyZXgYASADKAkSRQoFcXVlcnkYAiADKAsyNi5lZHUuc3RhbmZvcmQu",
+            "bmxwLnBpcGVsaW5lLlNlbWdyZXhSZXF1ZXN0LkRlcGVuZGVuY2llcxp6CgxE",
+            "ZXBlbmRlbmNpZXMSLwoFdG9rZW4YASADKAsyIC5lZHUuc3RhbmZvcmQubmxw",
+            "LnBpcGVsaW5lLlRva2VuEjkKBWdyYXBoGAIgAigLMiouZWR1LnN0YW5mb3Jk",
+            "Lm5scC5waXBlbGluZS5EZXBlbmRlbmN5R3JhcGgiigQKD1NlbWdyZXhSZXNw",
+            "b25zZRJGCgZyZXN1bHQYASADKAsyNi5lZHUuc3RhbmZvcmQubmxwLnBpcGVs",
+            "aW5lLlNlbWdyZXhSZXNwb25zZS5HcmFwaFJlc3VsdBotCglOYW1lZE5vZGUS",
+            "DAoEbmFtZRgBIAIoCRISCgptYXRjaEluZGV4GAIgAigFGisKDU5hbWVkUmVs",
+            "YXRpb24SDAoEbmFtZRgBIAIoCRIMCgRyZWxuGAIgAigJGqcBCgVNYXRjaBIS",
+            "CgptYXRjaEluZGV4GAEgAigFEkIKBG5vZGUYAiADKAsyNC5lZHUuc3RhbmZv",
+            "cmQubmxwLnBpcGVsaW5lLlNlbWdyZXhSZXNwb25zZS5OYW1lZE5vZGUSRgoE",
+            "cmVsbhgDIAMoCzI4LmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuU2VtZ3Jl",
+            "eFJlc3BvbnNlLk5hbWVkUmVsYXRpb24aUAoNU2VtZ3JleFJlc3VsdBI/CgVt",
+            "YXRjaBgBIAMoCzIwLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuU2VtZ3Jl",
+            "eFJlc3BvbnNlLk1hdGNoGlcKC0dyYXBoUmVzdWx0EkgKBnJlc3VsdBgBIAMo",
+            "CzI4LmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuU2VtZ3JleFJlc3BvbnNl",
+            "LlNlbWdyZXhSZXN1bHQiVwoSVG9rZW5zUmVnZXhSZXF1ZXN0EjAKA2RvYxgB",
+            "IAIoCzIjLmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuRG9jdW1lbnQSDwoH",
+            "cGF0dGVybhgCIAMoCSKnAwoTVG9rZW5zUmVnZXhSZXNwb25zZRJKCgVtYXRj",
+            "aBgBIAMoCzI7LmVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmUuVG9rZW5zUmVn",
+            "ZXhSZXNwb25zZS5QYXR0ZXJuTWF0Y2gaOQoNTWF0Y2hMb2NhdGlvbhIMCgR0",
+            "ZXh0GAEgASgJEg0KBWJlZ2luGAIgASgFEgsKA2VuZBgDIAEoBRqzAQoFTWF0",
+            "Y2gSEAoIc2VudGVuY2UYASACKAUSSwoFbWF0Y2gYAiACKAsyPC5lZHUuc3Rh",
+            "bmZvcmQubmxwLnBpcGVsaW5lLlRva2Vuc1JlZ2V4UmVzcG9uc2UuTWF0Y2hM",
+            "b2NhdGlvbhJLCgVncm91cBgDIAMoCzI8LmVkdS5zdGFuZm9yZC5ubHAucGlw",
+            "ZWxpbmUuVG9rZW5zUmVnZXhSZXNwb25zZS5NYXRjaExvY2F0aW9uGlMKDFBh",
+            "dHRlcm5NYXRjaBJDCgVtYXRjaBgBIAMoCzI0LmVkdS5zdGFuZm9yZC5ubHAu",
+            "cGlwZWxpbmUuVG9rZW5zUmVnZXhSZXNwb25zZS5NYXRjaCqjAQoITGFuZ3Vh",
+            "Z2USCwoHVW5rbm93bhAAEgcKA0FueRABEgoKBkFyYWJpYxACEgsKB0NoaW5l",
+            "c2UQAxILCgdFbmdsaXNoEAQSCgoGR2VybWFuEAUSCgoGRnJlbmNoEAYSCgoG",
+            "SGVicmV3EAcSCwoHU3BhbmlzaBAIEhQKEFVuaXZlcnNhbEVuZ2xpc2gQCRIU",
+            "ChBVbml2ZXJzYWxDaGluZXNlEAoqaAoJU2VudGltZW50EhMKD1NUUk9OR19O",
+            "RUdBVElWRRAAEhEKDVdFQUtfTkVHQVRJVkUQARILCgdORVVUUkFMEAISEQoN",
+            "V0VBS19QT1NJVElWRRADEhMKD1NUUk9OR19QT1NJVElWRRAEKpMBChROYXR1",
+            "cmFsTG9naWNSZWxhdGlvbhIPCgtFUVVJVkFMRU5DRRAAEhYKEkZPUldBUkRf",
+            "RU5UQUlMTUVOVBABEhYKElJFVkVSU0VfRU5UQUlMTUVOVBACEgwKCE5FR0FU",
+            "SU9OEAMSDwoLQUxURVJOQVRJT04QBBIJCgVDT1ZFUhAFEhAKDElOREVQRU5E",
+            "RU5DRRAGQioKGWVkdS5zdGFuZm9yZC5ubHAucGlwZWxpbmVCDUNvcmVOTFBQ",
+            "cm90b3M="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Edu.Stanford.Nlp.Pipeline.Language), typeof(global::Edu.Stanford.Nlp.Pipeline.Sentiment), typeof(global::Edu.Stanford.Nlp.Pipeline.NaturalLogicRelation), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.Document), global::Edu.Stanford.Nlp.Pipeline.Document.Parser, new[]{ "Text", "Sentence", "CorefChain", "DocID", "DocDate", "Calendar", "SentencelessToken", "Character", "Quote", "Mentions", "HasEntityMentionsAnnotation", "XmlDoc", "Sections", "MentionsForCoref", "HasCorefMentionAnnotation", "HasCorefAnnotation", "CorefMentionToEntityMentionMappings", "EntityMentionToCorefMentionMappings" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.Sentence), global::Edu.Stanford.Nlp.Pipeline.Sentence.Parser, new[]{ "Token", "TokenOffsetBegin", "TokenOffsetEnd", "SentenceIndex", "CharacterOffsetBegin", "CharacterOffsetEnd", "ParseTree", "BinarizedParseTree", "AnnotatedParseTree", "Sentiment", "KBestParseTrees", "BasicDependencies", "CollapsedDependencies", "CollapsedCCProcessedDependencies", "AlternativeDependencies", "OpenieTriple", "KbpTriple", "EntailedSentence", "EntailedClause", "EnhancedDependencies", "EnhancedPlusPlusDependencies", "Character", "Paragraph", "Text", "LineNumber", "HasRelationAnnotations", "Entity", "Relation", "HasNumerizedTokensAnnotation", "Mentions", "MentionsForCoref", "HasCorefMentionsAnnotation", "SentenceID", "SectionDate", "SectionIndex", "SectionName", "SectionAuthor", "DocID", "SectionQuoted", "HasEntityMentionsAnnotation", "HasKBPTriplesAnnotation", "HasOpenieTriplesAnnotation", "ChapterIndex", "ParagraphIndex" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.Token), global::Edu.Stanford.Nlp.Pipeline.Token.Parser, new[]{ "Word", "Pos", "Value", "Category", "Before", "After", "OriginalText", "Ner", "CoarseNER", "FineGrainedNER", "NerLabelProbs", "NormalizedNER", "Lemma", "BeginChar", "EndChar", "Utterance", "Speaker", "BeginIndex", "EndIndex", "TokenBeginIndex", "TokenEndIndex", "TimexValue", "HasXmlContext", "XmlContext", "CorefClusterID", "Answer", "HeadWordIndex", "Operator", "Polarity", "PolarityDir", "Span", "Sentiment", "QuotationIndex", "ConllUFeatures", "CoarseTag", "ConllUTokenSpan", "ConllUMisc", "ConllUSecondaryDeps", "WikipediaEntity", "IsNewline", "Gender", "TrueCase", "TrueCaseText", "ChineseChar", "ChineseSeg", "ChineseXMLChar", "SectionName", "SectionAuthor", "SectionDate", "SectionEndLabel", "Parent", "CorefMentionIndex", "EntityMentionIndex", "IsMWT", "IsFirstMWT", "MwtText", "NumericValue", "NumericType", "NumericCompositeValue", "NumericCompositeType", "CodepointOffsetBegin", "CodepointOffsetEnd" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.Sentence), global::Edu.Stanford.Nlp.Pipeline.Sentence.Parser, new[]{ "Token", "TokenOffsetBegin", "TokenOffsetEnd", "SentenceIndex", "CharacterOffsetBegin", "CharacterOffsetEnd", "ParseTree", "BinarizedParseTree", "AnnotatedParseTree", "Sentiment", "KBestParseTrees", "BasicDependencies", "CollapsedDependencies", "CollapsedCCProcessedDependencies", "AlternativeDependencies", "OpenieTriple", "KbpTriple", "EntailedSentence", "EntailedClause", "EnhancedDependencies", "EnhancedPlusPlusDependencies", "Character", "Paragraph", "Text", "LineNumber", "HasRelationAnnotations", "Entity", "Relation", "HasNumerizedTokensAnnotation", "Mentions", "MentionsForCoref", "HasCorefMentionsAnnotation", "SentenceID", "SectionDate", "SectionIndex", "SectionName", "SectionAuthor", "DocID", "SectionQuoted", "HasEntityMentionsAnnotation", "HasKBPTriplesAnnotation", "HasOpenieTriplesAnnotation", "ChapterIndex", "ParagraphIndex", "EnhancedSentence", "Speaker", "SpeakerType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.Token), global::Edu.Stanford.Nlp.Pipeline.Token.Parser, new[]{ "Word", "Pos", "Value", "Category", "Before", "After", "OriginalText", "Ner", "CoarseNER", "FineGrainedNER", "NerLabelProbs", "NormalizedNER", "Lemma", "BeginChar", "EndChar", "Utterance", "Speaker", "SpeakerType", "BeginIndex", "EndIndex", "TokenBeginIndex", "TokenEndIndex", "TimexValue", "HasXmlContext", "XmlContext", "CorefClusterID", "Answer", "HeadWordIndex", "Operator", "Polarity", "PolarityDir", "Span", "Sentiment", "QuotationIndex", "ConllUFeatures", "CoarseTag", "ConllUTokenSpan", "ConllUMisc", "ConllUSecondaryDeps", "WikipediaEntity", "IsNewline", "Gender", "TrueCase", "TrueCaseText", "ChineseChar", "ChineseSeg", "ChineseXMLChar", "ArabicSeg", "SectionName", "SectionAuthor", "SectionDate", "SectionEndLabel", "Parent", "CorefMentionIndex", "EntityMentionIndex", "IsMWT", "IsFirstMWT", "MwtText", "NumericValue", "NumericType", "NumericCompositeValue", "NumericCompositeType", "CodepointOffsetBegin", "CodepointOffsetEnd" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.Quote), global::Edu.Stanford.Nlp.Pipeline.Quote.Parser, new[]{ "Text", "Begin", "End", "SentenceBegin", "SentenceEnd", "TokenBegin", "TokenEnd", "Docid", "Index", "Author", "Mention", "MentionBegin", "MentionEnd", "MentionType", "MentionSieve", "Speaker", "SpeakerSieve", "CanonicalMention", "CanonicalMentionBegin", "CanonicalMentionEnd", "AttributionDependencyGraph" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.ParseTree), global::Edu.Stanford.Nlp.Pipeline.ParseTree.Parser, new[]{ "Child", "Value", "YieldBeginIndex", "YieldEndIndex", "Score", "Sentiment" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.DependencyGraph), global::Edu.Stanford.Nlp.Pipeline.DependencyGraph.Parser, new[]{ "Node", "Edge", "Root" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.DependencyGraph.Types.Node), global::Edu.Stanford.Nlp.Pipeline.DependencyGraph.Types.Node.Parser, new[]{ "SentenceIndex", "Index", "CopyAnnotation" }, null, null, null, null),
@@ -273,7 +305,17 @@ namespace Edu.Stanford.Nlp.Pipeline {
             new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.RelationTriple), global::Edu.Stanford.Nlp.Pipeline.RelationTriple.Parser, new[]{ "Subject", "Relation", "Object", "Confidence", "SubjectTokens", "RelationTokens", "ObjectTokens", "Tree", "Istmod", "PrefixBe", "SuffixBe", "SuffixOf" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.MapStringString), global::Edu.Stanford.Nlp.Pipeline.MapStringString.Parser, new[]{ "Key", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.MapIntString), global::Edu.Stanford.Nlp.Pipeline.MapIntString.Parser, new[]{ "Key", "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.Section), global::Edu.Stanford.Nlp.Pipeline.Section.Parser, new[]{ "CharBegin", "CharEnd", "Author", "SentenceIndexes", "Datetime", "Quotes", "AuthorCharBegin", "AuthorCharEnd", "XmlTag" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.Section), global::Edu.Stanford.Nlp.Pipeline.Section.Parser, new[]{ "CharBegin", "CharEnd", "Author", "SentenceIndexes", "Datetime", "Quotes", "AuthorCharBegin", "AuthorCharEnd", "XmlTag" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest), global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Parser, new[]{ "Semgrex", "Query" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Types.Dependencies), global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Types.Dependencies.Parser, new[]{ "Token", "Graph" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse), global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Parser, new[]{ "Result" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedNode), global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedNode.Parser, new[]{ "Name", "MatchIndex" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedRelation), global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedRelation.Parser, new[]{ "Name", "Reln" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.Match), global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.Match.Parser, new[]{ "MatchIndex", "Node", "Reln" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.SemgrexResult), global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.SemgrexResult.Parser, new[]{ "Match" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.GraphResult), global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.GraphResult.Parser, new[]{ "Result" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.TokensRegexRequest), global::Edu.Stanford.Nlp.Pipeline.TokensRegexRequest.Parser, new[]{ "Doc", "Pattern" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse), global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Parser, new[]{ "Match" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation), global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation.Parser, new[]{ "Text", "Begin", "End" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.Match), global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.Match.Parser, new[]{ "Sentence", "Match_", "Group" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.PatternMatch), global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.PatternMatch.Parser, new[]{ "Match" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -1097,6 +1139,9 @@ namespace Edu.Stanford.Nlp.Pipeline {
       hasOpenieTriplesAnnotation_ = other.hasOpenieTriplesAnnotation_;
       chapterIndex_ = other.chapterIndex_;
       paragraphIndex_ = other.paragraphIndex_;
+      enhancedSentence_ = other.enhancedSentence_ != null ? other.enhancedSentence_.Clone() : null;
+      speaker_ = other.speaker_;
+      speakerType_ = other.speakerType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
       _extensions = pb::ExtensionSet.Clone(other._extensions);
     }
@@ -1935,6 +1980,72 @@ namespace Edu.Stanford.Nlp.Pipeline {
       _hasBits0 &= ~16384;
     }
 
+    /// <summary>Field number for the "enhancedSentence" field.</summary>
+    public const int EnhancedSentenceFieldNumber = 70;
+    private global::Edu.Stanford.Nlp.Pipeline.Sentence enhancedSentence_;
+    /// <summary>
+    /// the quote annotator can soometimes add merged sentences
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Edu.Stanford.Nlp.Pipeline.Sentence EnhancedSentence {
+      get { return enhancedSentence_; }
+      set {
+        enhancedSentence_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "speaker" field.</summary>
+    public const int SpeakerFieldNumber = 71;
+    private readonly static string SpeakerDefaultValue = "";
+
+    private string speaker_;
+    /// <summary>
+    /// speaker stuff
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Speaker {
+      get { return speaker_ ?? SpeakerDefaultValue; }
+      set {
+        speaker_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "speaker" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasSpeaker {
+      get { return speaker_ != null; }
+    }
+    /// <summary>Clears the value of the "speaker" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearSpeaker() {
+      speaker_ = null;
+    }
+
+    /// <summary>Field number for the "speakerType" field.</summary>
+    public const int SpeakerTypeFieldNumber = 72;
+    private readonly static string SpeakerTypeDefaultValue = "";
+
+    private string speakerType_;
+    /// <summary>
+    /// The type of speaker speaking this sentence
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SpeakerType {
+      get { return speakerType_ ?? SpeakerTypeDefaultValue; }
+      set {
+        speakerType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "speakerType" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasSpeakerType {
+      get { return speakerType_ != null; }
+    }
+    /// <summary>Clears the value of the "speakerType" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearSpeakerType() {
+      speakerType_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Sentence);
@@ -1992,6 +2103,9 @@ namespace Edu.Stanford.Nlp.Pipeline {
       if (HasOpenieTriplesAnnotation != other.HasOpenieTriplesAnnotation) return false;
       if (ChapterIndex != other.ChapterIndex) return false;
       if (ParagraphIndex != other.ParagraphIndex) return false;
+      if (!object.Equals(EnhancedSentence, other.EnhancedSentence)) return false;
+      if (Speaker != other.Speaker) return false;
+      if (SpeakerType != other.SpeakerType) return false;
       if (!Equals(_extensions, other._extensions)) {
         return false;
       }
@@ -2045,6 +2159,9 @@ namespace Edu.Stanford.Nlp.Pipeline {
       if (HasHasOpenieTriplesAnnotation) hash ^= HasOpenieTriplesAnnotation.GetHashCode();
       if (HasChapterIndex) hash ^= ChapterIndex.GetHashCode();
       if (HasParagraphIndex) hash ^= ParagraphIndex.GetHashCode();
+      if (enhancedSentence_ != null) hash ^= EnhancedSentence.GetHashCode();
+      if (HasSpeaker) hash ^= Speaker.GetHashCode();
+      if (HasSpeakerType) hash ^= SpeakerType.GetHashCode();
       if (_extensions != null) {
         hash ^= _extensions.GetHashCode();
       }
@@ -2204,6 +2321,18 @@ namespace Edu.Stanford.Nlp.Pipeline {
         output.WriteRawTag(168, 4);
         output.WriteBool(HasOpenieTriplesAnnotation);
       }
+      if (enhancedSentence_ != null) {
+        output.WriteRawTag(178, 4);
+        output.WriteMessage(EnhancedSentence);
+      }
+      if (HasSpeaker) {
+        output.WriteRawTag(186, 4);
+        output.WriteString(Speaker);
+      }
+      if (HasSpeakerType) {
+        output.WriteRawTag(194, 4);
+        output.WriteString(SpeakerType);
+      }
       if (_extensions != null) {
         _extensions.WriteTo(output);
       }
@@ -2324,6 +2453,15 @@ namespace Edu.Stanford.Nlp.Pipeline {
       }
       if (HasParagraphIndex) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ParagraphIndex);
+      }
+      if (enhancedSentence_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(EnhancedSentence);
+      }
+      if (HasSpeaker) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Speaker);
+      }
+      if (HasSpeakerType) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(SpeakerType);
       }
       if (_extensions != null) {
         size += _extensions.CalculateSize();
@@ -2475,6 +2613,18 @@ namespace Edu.Stanford.Nlp.Pipeline {
       }
       if (other.HasParagraphIndex) {
         ParagraphIndex = other.ParagraphIndex;
+      }
+      if (other.enhancedSentence_ != null) {
+        if (enhancedSentence_ == null) {
+          EnhancedSentence = new global::Edu.Stanford.Nlp.Pipeline.Sentence();
+        }
+        EnhancedSentence.MergeFrom(other.EnhancedSentence);
+      }
+      if (other.HasSpeaker) {
+        Speaker = other.Speaker;
+      }
+      if (other.HasSpeakerType) {
+        SpeakerType = other.SpeakerType;
       }
       pb::ExtensionSet.MergeFrom(ref _extensions, other._extensions);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2693,6 +2843,21 @@ namespace Edu.Stanford.Nlp.Pipeline {
             HasOpenieTriplesAnnotation = input.ReadBool();
             break;
           }
+          case 562: {
+            if (enhancedSentence_ == null) {
+              EnhancedSentence = new global::Edu.Stanford.Nlp.Pipeline.Sentence();
+            }
+            input.ReadMessage(EnhancedSentence);
+            break;
+          }
+          case 570: {
+            Speaker = input.ReadString();
+            break;
+          }
+          case 578: {
+            SpeakerType = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -2771,6 +2936,7 @@ namespace Edu.Stanford.Nlp.Pipeline {
       endChar_ = other.endChar_;
       utterance_ = other.utterance_;
       speaker_ = other.speaker_;
+      speakerType_ = other.speakerType_;
       beginIndex_ = other.beginIndex_;
       endIndex_ = other.endIndex_;
       tokenBeginIndex_ = other.tokenBeginIndex_;
@@ -2800,6 +2966,7 @@ namespace Edu.Stanford.Nlp.Pipeline {
       chineseChar_ = other.chineseChar_;
       chineseSeg_ = other.chineseSeg_;
       chineseXMLChar_ = other.chineseXMLChar_;
+      arabicSeg_ = other.arabicSeg_;
       sectionName_ = other.sectionName_;
       sectionAuthor_ = other.sectionAuthor_;
       sectionDate_ = other.sectionDate_;
@@ -3255,6 +3422,32 @@ namespace Edu.Stanford.Nlp.Pipeline {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearSpeaker() {
       speaker_ = null;
+    }
+
+    /// <summary>Field number for the "speakerType" field.</summary>
+    public const int SpeakerTypeFieldNumber = 77;
+    private readonly static string SpeakerTypeDefaultValue = "";
+
+    private string speakerType_;
+    /// <summary>
+    /// The type of speaker speaking this word
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SpeakerType {
+      get { return speakerType_ ?? SpeakerTypeDefaultValue; }
+      set {
+        speakerType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "speakerType" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasSpeakerType {
+      get { return speakerType_ != null; }
+    }
+    /// <summary>Clears the value of the "speakerType" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearSpeakerType() {
+      speakerType_ = null;
     }
 
     /// <summary>Field number for the "beginIndex" field.</summary>
@@ -3899,6 +4092,32 @@ namespace Edu.Stanford.Nlp.Pipeline {
       chineseXMLChar_ = null;
     }
 
+    /// <summary>Field number for the "arabicSeg" field.</summary>
+    public const int ArabicSegFieldNumber = 76;
+    private readonly static string ArabicSegDefaultValue = "";
+
+    private string arabicSeg_;
+    /// <summary>
+    ///  Arabic character info
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ArabicSeg {
+      get { return arabicSeg_ ?? ArabicSegDefaultValue; }
+      set {
+        arabicSeg_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "arabicSeg" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasArabicSeg {
+      get { return arabicSeg_ != null; }
+    }
+    /// <summary>Clears the value of the "arabicSeg" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearArabicSeg() {
+      arabicSeg_ = null;
+    }
+
     /// <summary>Field number for the "sectionName" field.</summary>
     public const int SectionNameFieldNumber = 56;
     private readonly static string SectionNameDefaultValue = "";
@@ -4306,6 +4525,7 @@ namespace Edu.Stanford.Nlp.Pipeline {
       if (EndChar != other.EndChar) return false;
       if (Utterance != other.Utterance) return false;
       if (Speaker != other.Speaker) return false;
+      if (SpeakerType != other.SpeakerType) return false;
       if (BeginIndex != other.BeginIndex) return false;
       if (EndIndex != other.EndIndex) return false;
       if (TokenBeginIndex != other.TokenBeginIndex) return false;
@@ -4335,6 +4555,7 @@ namespace Edu.Stanford.Nlp.Pipeline {
       if (ChineseChar != other.ChineseChar) return false;
       if (ChineseSeg != other.ChineseSeg) return false;
       if (ChineseXMLChar != other.ChineseXMLChar) return false;
+      if (ArabicSeg != other.ArabicSeg) return false;
       if (SectionName != other.SectionName) return false;
       if (SectionAuthor != other.SectionAuthor) return false;
       if (SectionDate != other.SectionDate) return false;
@@ -4377,6 +4598,7 @@ namespace Edu.Stanford.Nlp.Pipeline {
       if (HasEndChar) hash ^= EndChar.GetHashCode();
       if (HasUtterance) hash ^= Utterance.GetHashCode();
       if (HasSpeaker) hash ^= Speaker.GetHashCode();
+      if (HasSpeakerType) hash ^= SpeakerType.GetHashCode();
       if (HasBeginIndex) hash ^= BeginIndex.GetHashCode();
       if (HasEndIndex) hash ^= EndIndex.GetHashCode();
       if (HasTokenBeginIndex) hash ^= TokenBeginIndex.GetHashCode();
@@ -4406,6 +4628,7 @@ namespace Edu.Stanford.Nlp.Pipeline {
       if (HasChineseChar) hash ^= ChineseChar.GetHashCode();
       if (HasChineseSeg) hash ^= ChineseSeg.GetHashCode();
       if (HasChineseXMLChar) hash ^= ChineseXMLChar.GetHashCode();
+      if (HasArabicSeg) hash ^= ArabicSeg.GetHashCode();
       if (HasSectionName) hash ^= SectionName.GetHashCode();
       if (HasSectionAuthor) hash ^= SectionAuthor.GetHashCode();
       if (HasSectionDate) hash ^= SectionDate.GetHashCode();
@@ -4677,6 +4900,14 @@ namespace Edu.Stanford.Nlp.Pipeline {
         output.WriteRawTag(216, 4);
         output.WriteUInt32(CodepointOffsetEnd);
       }
+      if (HasArabicSeg) {
+        output.WriteRawTag(226, 4);
+        output.WriteString(ArabicSeg);
+      }
+      if (HasSpeakerType) {
+        output.WriteRawTag(234, 4);
+        output.WriteString(SpeakerType);
+      }
       if (_extensions != null) {
         _extensions.WriteTo(output);
       }
@@ -4736,6 +4967,9 @@ namespace Edu.Stanford.Nlp.Pipeline {
       }
       if (HasSpeaker) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Speaker);
+      }
+      if (HasSpeakerType) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(SpeakerType);
       }
       if (HasBeginIndex) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BeginIndex);
@@ -4821,6 +5055,9 @@ namespace Edu.Stanford.Nlp.Pipeline {
       }
       if (HasChineseXMLChar) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(ChineseXMLChar);
+      }
+      if (HasArabicSeg) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(ArabicSeg);
       }
       if (HasSectionName) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(SectionName);
@@ -4931,6 +5168,9 @@ namespace Edu.Stanford.Nlp.Pipeline {
       if (other.HasSpeaker) {
         Speaker = other.Speaker;
       }
+      if (other.HasSpeakerType) {
+        SpeakerType = other.SpeakerType;
+      }
       if (other.HasBeginIndex) {
         BeginIndex = other.BeginIndex;
       }
@@ -5036,6 +5276,9 @@ namespace Edu.Stanford.Nlp.Pipeline {
       }
       if (other.HasChineseXMLChar) {
         ChineseXMLChar = other.ChineseXMLChar;
+      }
+      if (other.HasArabicSeg) {
+        ArabicSeg = other.ArabicSeg;
       }
       if (other.HasSectionName) {
         SectionName = other.SectionName;
@@ -5365,6 +5608,14 @@ namespace Edu.Stanford.Nlp.Pipeline {
           }
           case 600: {
             CodepointOffsetEnd = input.ReadUInt32();
+            break;
+          }
+          case 610: {
+            ArabicSeg = input.ReadString();
+            break;
+          }
+          case 618: {
+            SpeakerType = input.ReadString();
             break;
           }
         }
@@ -14815,6 +15066,2079 @@ namespace Edu.Stanford.Nlp.Pipeline {
         }
       }
     }
+
+  }
+
+  /// <summary>
+  /// A message for requesting a semgrex
+  /// Each sentence stores information about the tokens making up the
+  /// corresponding graph
+  /// An alternative would have been to use the existing Document or
+  /// Sentence classes, but the problem with that is it would be
+  /// ambiguous which dependency object to use.
+  /// </summary>
+  public sealed partial class SemgrexRequest : pb::IMessage<SemgrexRequest> {
+    private static readonly pb::MessageParser<SemgrexRequest> _parser = new pb::MessageParser<SemgrexRequest>(() => new SemgrexRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SemgrexRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Edu.Stanford.Nlp.Pipeline.CoreNLPReflection.Descriptor.MessageTypes[23]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SemgrexRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SemgrexRequest(SemgrexRequest other) : this() {
+      semgrex_ = other.semgrex_.Clone();
+      query_ = other.query_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SemgrexRequest Clone() {
+      return new SemgrexRequest(this);
+    }
+
+    /// <summary>Field number for the "semgrex" field.</summary>
+    public const int SemgrexFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_semgrex_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> semgrex_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Semgrex {
+      get { return semgrex_; }
+    }
+
+    /// <summary>Field number for the "query" field.</summary>
+    public const int QueryFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Types.Dependencies> _repeated_query_codec
+        = pb::FieldCodec.ForMessage(18, global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Types.Dependencies.Parser);
+    private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Types.Dependencies> query_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Types.Dependencies>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Types.Dependencies> Query {
+      get { return query_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SemgrexRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SemgrexRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!semgrex_.Equals(other.semgrex_)) return false;
+      if(!query_.Equals(other.query_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= semgrex_.GetHashCode();
+      hash ^= query_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      semgrex_.WriteTo(output, _repeated_semgrex_codec);
+      query_.WriteTo(output, _repeated_query_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += semgrex_.CalculateSize(_repeated_semgrex_codec);
+      size += query_.CalculateSize(_repeated_query_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SemgrexRequest other) {
+      if (other == null) {
+        return;
+      }
+      semgrex_.Add(other.semgrex_);
+      query_.Add(other.query_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            semgrex_.AddEntriesFrom(input, _repeated_semgrex_codec);
+            break;
+          }
+          case 18: {
+            query_.AddEntriesFrom(input, _repeated_query_codec);
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the SemgrexRequest message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class Dependencies : pb::IMessage<Dependencies> {
+        private static readonly pb::MessageParser<Dependencies> _parser = new pb::MessageParser<Dependencies>(() => new Dependencies());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Dependencies> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.SemgrexRequest.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Dependencies() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Dependencies(Dependencies other) : this() {
+          token_ = other.token_.Clone();
+          graph_ = other.graph_ != null ? other.graph_.Clone() : null;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Dependencies Clone() {
+          return new Dependencies(this);
+        }
+
+        /// <summary>Field number for the "token" field.</summary>
+        public const int TokenFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.Token> _repeated_token_codec
+            = pb::FieldCodec.ForMessage(10, global::Edu.Stanford.Nlp.Pipeline.Token.Parser);
+        private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.Token> token_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.Token>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.Token> Token {
+          get { return token_; }
+        }
+
+        /// <summary>Field number for the "graph" field.</summary>
+        public const int GraphFieldNumber = 2;
+        private global::Edu.Stanford.Nlp.Pipeline.DependencyGraph graph_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Edu.Stanford.Nlp.Pipeline.DependencyGraph Graph {
+          get { return graph_; }
+          set {
+            graph_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Dependencies);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Dependencies other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!token_.Equals(other.token_)) return false;
+          if (!object.Equals(Graph, other.Graph)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= token_.GetHashCode();
+          if (graph_ != null) hash ^= Graph.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          token_.WriteTo(output, _repeated_token_codec);
+          if (graph_ != null) {
+            output.WriteRawTag(18);
+            output.WriteMessage(Graph);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += token_.CalculateSize(_repeated_token_codec);
+          if (graph_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Graph);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Dependencies other) {
+          if (other == null) {
+            return;
+          }
+          token_.Add(other.token_);
+          if (other.graph_ != null) {
+            if (graph_ == null) {
+              Graph = new global::Edu.Stanford.Nlp.Pipeline.DependencyGraph();
+            }
+            Graph.MergeFrom(other.Graph);
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                token_.AddEntriesFrom(input, _repeated_token_codec);
+                break;
+              }
+              case 18: {
+                if (graph_ == null) {
+                  Graph = new global::Edu.Stanford.Nlp.Pipeline.DependencyGraph();
+                }
+                input.ReadMessage(Graph);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  /// <summary>
+  /// The response from running a semgrex
+  /// If you pass in M semgrex expressions and N dependency graphs,
+  /// this returns MxN nested results.  Each SemgrexResult can match
+  /// multiple times in one graph
+  /// </summary>
+  public sealed partial class SemgrexResponse : pb::IMessage<SemgrexResponse> {
+    private static readonly pb::MessageParser<SemgrexResponse> _parser = new pb::MessageParser<SemgrexResponse>(() => new SemgrexResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SemgrexResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Edu.Stanford.Nlp.Pipeline.CoreNLPReflection.Descriptor.MessageTypes[24]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SemgrexResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SemgrexResponse(SemgrexResponse other) : this() {
+      result_ = other.result_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SemgrexResponse Clone() {
+      return new SemgrexResponse(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.GraphResult> _repeated_result_codec
+        = pb::FieldCodec.ForMessage(10, global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.GraphResult.Parser);
+    private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.GraphResult> result_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.GraphResult>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.GraphResult> Result {
+      get { return result_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SemgrexResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SemgrexResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!result_.Equals(other.result_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= result_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      result_.WriteTo(output, _repeated_result_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += result_.CalculateSize(_repeated_result_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SemgrexResponse other) {
+      if (other == null) {
+        return;
+      }
+      result_.Add(other.result_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            result_.AddEntriesFrom(input, _repeated_result_codec);
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the SemgrexResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class NamedNode : pb::IMessage<NamedNode> {
+        private static readonly pb::MessageParser<NamedNode> _parser = new pb::MessageParser<NamedNode>(() => new NamedNode());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<NamedNode> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedNode() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedNode(NamedNode other) : this() {
+          _hasBits0 = other._hasBits0;
+          name_ = other.name_;
+          matchIndex_ = other.matchIndex_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedNode Clone() {
+          return new NamedNode(this);
+        }
+
+        /// <summary>Field number for the "name" field.</summary>
+        public const int NameFieldNumber = 1;
+        private readonly static string NameDefaultValue = "";
+
+        private string name_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Name {
+          get { return name_ ?? NameDefaultValue; }
+          set {
+            name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "name" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasName {
+          get { return name_ != null; }
+        }
+        /// <summary>Clears the value of the "name" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearName() {
+          name_ = null;
+        }
+
+        /// <summary>Field number for the "matchIndex" field.</summary>
+        public const int MatchIndexFieldNumber = 2;
+        private readonly static int MatchIndexDefaultValue = 0;
+
+        private int matchIndex_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int MatchIndex {
+          get { if ((_hasBits0 & 1) != 0) { return matchIndex_; } else { return MatchIndexDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            matchIndex_ = value;
+          }
+        }
+        /// <summary>Gets whether the "matchIndex" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasMatchIndex {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "matchIndex" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearMatchIndex() {
+          _hasBits0 &= ~1;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as NamedNode);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(NamedNode other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Name != other.Name) return false;
+          if (MatchIndex != other.MatchIndex) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasName) hash ^= Name.GetHashCode();
+          if (HasMatchIndex) hash ^= MatchIndex.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (HasName) {
+            output.WriteRawTag(10);
+            output.WriteString(Name);
+          }
+          if (HasMatchIndex) {
+            output.WriteRawTag(16);
+            output.WriteInt32(MatchIndex);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasName) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+          }
+          if (HasMatchIndex) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(MatchIndex);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(NamedNode other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasName) {
+            Name = other.Name;
+          }
+          if (other.HasMatchIndex) {
+            MatchIndex = other.MatchIndex;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                Name = input.ReadString();
+                break;
+              }
+              case 16: {
+                MatchIndex = input.ReadInt32();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class NamedRelation : pb::IMessage<NamedRelation> {
+        private static readonly pb::MessageParser<NamedRelation> _parser = new pb::MessageParser<NamedRelation>(() => new NamedRelation());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<NamedRelation> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedRelation() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedRelation(NamedRelation other) : this() {
+          name_ = other.name_;
+          reln_ = other.reln_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public NamedRelation Clone() {
+          return new NamedRelation(this);
+        }
+
+        /// <summary>Field number for the "name" field.</summary>
+        public const int NameFieldNumber = 1;
+        private readonly static string NameDefaultValue = "";
+
+        private string name_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Name {
+          get { return name_ ?? NameDefaultValue; }
+          set {
+            name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "name" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasName {
+          get { return name_ != null; }
+        }
+        /// <summary>Clears the value of the "name" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearName() {
+          name_ = null;
+        }
+
+        /// <summary>Field number for the "reln" field.</summary>
+        public const int RelnFieldNumber = 2;
+        private readonly static string RelnDefaultValue = "";
+
+        private string reln_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Reln {
+          get { return reln_ ?? RelnDefaultValue; }
+          set {
+            reln_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "reln" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasReln {
+          get { return reln_ != null; }
+        }
+        /// <summary>Clears the value of the "reln" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearReln() {
+          reln_ = null;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as NamedRelation);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(NamedRelation other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Name != other.Name) return false;
+          if (Reln != other.Reln) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasName) hash ^= Name.GetHashCode();
+          if (HasReln) hash ^= Reln.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (HasName) {
+            output.WriteRawTag(10);
+            output.WriteString(Name);
+          }
+          if (HasReln) {
+            output.WriteRawTag(18);
+            output.WriteString(Reln);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasName) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+          }
+          if (HasReln) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Reln);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(NamedRelation other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasName) {
+            Name = other.Name;
+          }
+          if (other.HasReln) {
+            Reln = other.Reln;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                Name = input.ReadString();
+                break;
+              }
+              case 18: {
+                Reln = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class Match : pb::IMessage<Match> {
+        private static readonly pb::MessageParser<Match> _parser = new pb::MessageParser<Match>(() => new Match());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Match> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Match() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Match(Match other) : this() {
+          _hasBits0 = other._hasBits0;
+          matchIndex_ = other.matchIndex_;
+          node_ = other.node_.Clone();
+          reln_ = other.reln_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Match Clone() {
+          return new Match(this);
+        }
+
+        /// <summary>Field number for the "matchIndex" field.</summary>
+        public const int MatchIndexFieldNumber = 1;
+        private readonly static int MatchIndexDefaultValue = 0;
+
+        private int matchIndex_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int MatchIndex {
+          get { if ((_hasBits0 & 1) != 0) { return matchIndex_; } else { return MatchIndexDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            matchIndex_ = value;
+          }
+        }
+        /// <summary>Gets whether the "matchIndex" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasMatchIndex {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "matchIndex" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearMatchIndex() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "node" field.</summary>
+        public const int NodeFieldNumber = 2;
+        private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedNode> _repeated_node_codec
+            = pb::FieldCodec.ForMessage(18, global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedNode.Parser);
+        private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedNode> node_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedNode>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedNode> Node {
+          get { return node_; }
+        }
+
+        /// <summary>Field number for the "reln" field.</summary>
+        public const int RelnFieldNumber = 3;
+        private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedRelation> _repeated_reln_codec
+            = pb::FieldCodec.ForMessage(26, global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedRelation.Parser);
+        private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedRelation> reln_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedRelation>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.NamedRelation> Reln {
+          get { return reln_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Match);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Match other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (MatchIndex != other.MatchIndex) return false;
+          if(!node_.Equals(other.node_)) return false;
+          if(!reln_.Equals(other.reln_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasMatchIndex) hash ^= MatchIndex.GetHashCode();
+          hash ^= node_.GetHashCode();
+          hash ^= reln_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (HasMatchIndex) {
+            output.WriteRawTag(8);
+            output.WriteInt32(MatchIndex);
+          }
+          node_.WriteTo(output, _repeated_node_codec);
+          reln_.WriteTo(output, _repeated_reln_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasMatchIndex) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(MatchIndex);
+          }
+          size += node_.CalculateSize(_repeated_node_codec);
+          size += reln_.CalculateSize(_repeated_reln_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Match other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasMatchIndex) {
+            MatchIndex = other.MatchIndex;
+          }
+          node_.Add(other.node_);
+          reln_.Add(other.reln_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                MatchIndex = input.ReadInt32();
+                break;
+              }
+              case 18: {
+                node_.AddEntriesFrom(input, _repeated_node_codec);
+                break;
+              }
+              case 26: {
+                reln_.AddEntriesFrom(input, _repeated_reln_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class SemgrexResult : pb::IMessage<SemgrexResult> {
+        private static readonly pb::MessageParser<SemgrexResult> _parser = new pb::MessageParser<SemgrexResult>(() => new SemgrexResult());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<SemgrexResult> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Descriptor.NestedTypes[3]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SemgrexResult() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SemgrexResult(SemgrexResult other) : this() {
+          match_ = other.match_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public SemgrexResult Clone() {
+          return new SemgrexResult(this);
+        }
+
+        /// <summary>Field number for the "match" field.</summary>
+        public const int MatchFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.Match> _repeated_match_codec
+            = pb::FieldCodec.ForMessage(10, global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.Match.Parser);
+        private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.Match> match_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.Match>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.Match> Match {
+          get { return match_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as SemgrexResult);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(SemgrexResult other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!match_.Equals(other.match_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= match_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          match_.WriteTo(output, _repeated_match_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += match_.CalculateSize(_repeated_match_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(SemgrexResult other) {
+          if (other == null) {
+            return;
+          }
+          match_.Add(other.match_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                match_.AddEntriesFrom(input, _repeated_match_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class GraphResult : pb::IMessage<GraphResult> {
+        private static readonly pb::MessageParser<GraphResult> _parser = new pb::MessageParser<GraphResult>(() => new GraphResult());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<GraphResult> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Descriptor.NestedTypes[4]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public GraphResult() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public GraphResult(GraphResult other) : this() {
+          result_ = other.result_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public GraphResult Clone() {
+          return new GraphResult(this);
+        }
+
+        /// <summary>Field number for the "result" field.</summary>
+        public const int ResultFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.SemgrexResult> _repeated_result_codec
+            = pb::FieldCodec.ForMessage(10, global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.SemgrexResult.Parser);
+        private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.SemgrexResult> result_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.SemgrexResult>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.SemgrexResponse.Types.SemgrexResult> Result {
+          get { return result_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as GraphResult);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(GraphResult other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!result_.Equals(other.result_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= result_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          result_.WriteTo(output, _repeated_result_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += result_.CalculateSize(_repeated_result_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(GraphResult other) {
+          if (other == null) {
+            return;
+          }
+          result_.Add(other.result_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                result_.AddEntriesFrom(input, _repeated_result_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
+
+  }
+
+  /// <summary>
+  /// It's possible to send in a whole document, but we
+  /// only care about the Sentences and Tokens
+  /// </summary>
+  public sealed partial class TokensRegexRequest : pb::IMessage<TokensRegexRequest> {
+    private static readonly pb::MessageParser<TokensRegexRequest> _parser = new pb::MessageParser<TokensRegexRequest>(() => new TokensRegexRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TokensRegexRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Edu.Stanford.Nlp.Pipeline.CoreNLPReflection.Descriptor.MessageTypes[25]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TokensRegexRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TokensRegexRequest(TokensRegexRequest other) : this() {
+      doc_ = other.doc_ != null ? other.doc_.Clone() : null;
+      pattern_ = other.pattern_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TokensRegexRequest Clone() {
+      return new TokensRegexRequest(this);
+    }
+
+    /// <summary>Field number for the "doc" field.</summary>
+    public const int DocFieldNumber = 1;
+    private global::Edu.Stanford.Nlp.Pipeline.Document doc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Edu.Stanford.Nlp.Pipeline.Document Doc {
+      get { return doc_; }
+      set {
+        doc_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pattern" field.</summary>
+    public const int PatternFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_pattern_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> pattern_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Pattern {
+      get { return pattern_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TokensRegexRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TokensRegexRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Doc, other.Doc)) return false;
+      if(!pattern_.Equals(other.pattern_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (doc_ != null) hash ^= Doc.GetHashCode();
+      hash ^= pattern_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (doc_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Doc);
+      }
+      pattern_.WriteTo(output, _repeated_pattern_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (doc_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Doc);
+      }
+      size += pattern_.CalculateSize(_repeated_pattern_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TokensRegexRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.doc_ != null) {
+        if (doc_ == null) {
+          Doc = new global::Edu.Stanford.Nlp.Pipeline.Document();
+        }
+        Doc.MergeFrom(other.Doc);
+      }
+      pattern_.Add(other.pattern_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (doc_ == null) {
+              Doc = new global::Edu.Stanford.Nlp.Pipeline.Document();
+            }
+            input.ReadMessage(Doc);
+            break;
+          }
+          case 18: {
+            pattern_.AddEntriesFrom(input, _repeated_pattern_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// The result will be a nested structure:
+  /// repeated PatternMatch, one for each pattern
+  /// each PatternMatch has a repeated Match,
+  ///   which tells you which sentence matched and where
+  /// </summary>
+  public sealed partial class TokensRegexResponse : pb::IMessage<TokensRegexResponse> {
+    private static readonly pb::MessageParser<TokensRegexResponse> _parser = new pb::MessageParser<TokensRegexResponse>(() => new TokensRegexResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TokensRegexResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Edu.Stanford.Nlp.Pipeline.CoreNLPReflection.Descriptor.MessageTypes[26]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TokensRegexResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TokensRegexResponse(TokensRegexResponse other) : this() {
+      match_ = other.match_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TokensRegexResponse Clone() {
+      return new TokensRegexResponse(this);
+    }
+
+    /// <summary>Field number for the "match" field.</summary>
+    public const int MatchFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.PatternMatch> _repeated_match_codec
+        = pb::FieldCodec.ForMessage(10, global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.PatternMatch.Parser);
+    private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.PatternMatch> match_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.PatternMatch>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.PatternMatch> Match {
+      get { return match_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TokensRegexResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TokensRegexResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!match_.Equals(other.match_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= match_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      match_.WriteTo(output, _repeated_match_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += match_.CalculateSize(_repeated_match_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TokensRegexResponse other) {
+      if (other == null) {
+        return;
+      }
+      match_.Add(other.match_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            match_.AddEntriesFrom(input, _repeated_match_codec);
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the TokensRegexResponse message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class MatchLocation : pb::IMessage<MatchLocation> {
+        private static readonly pb::MessageParser<MatchLocation> _parser = new pb::MessageParser<MatchLocation>(() => new MatchLocation());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<MatchLocation> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MatchLocation() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MatchLocation(MatchLocation other) : this() {
+          _hasBits0 = other._hasBits0;
+          text_ = other.text_;
+          begin_ = other.begin_;
+          end_ = other.end_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public MatchLocation Clone() {
+          return new MatchLocation(this);
+        }
+
+        /// <summary>Field number for the "text" field.</summary>
+        public const int TextFieldNumber = 1;
+        private readonly static string TextDefaultValue = "";
+
+        private string text_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Text {
+          get { return text_ ?? TextDefaultValue; }
+          set {
+            text_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "text" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasText {
+          get { return text_ != null; }
+        }
+        /// <summary>Clears the value of the "text" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearText() {
+          text_ = null;
+        }
+
+        /// <summary>Field number for the "begin" field.</summary>
+        public const int BeginFieldNumber = 2;
+        private readonly static int BeginDefaultValue = 0;
+
+        private int begin_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int Begin {
+          get { if ((_hasBits0 & 1) != 0) { return begin_; } else { return BeginDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            begin_ = value;
+          }
+        }
+        /// <summary>Gets whether the "begin" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasBegin {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "begin" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearBegin() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "end" field.</summary>
+        public const int EndFieldNumber = 3;
+        private readonly static int EndDefaultValue = 0;
+
+        private int end_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int End {
+          get { if ((_hasBits0 & 2) != 0) { return end_; } else { return EndDefaultValue; } }
+          set {
+            _hasBits0 |= 2;
+            end_ = value;
+          }
+        }
+        /// <summary>Gets whether the "end" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasEnd {
+          get { return (_hasBits0 & 2) != 0; }
+        }
+        /// <summary>Clears the value of the "end" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearEnd() {
+          _hasBits0 &= ~2;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as MatchLocation);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(MatchLocation other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Text != other.Text) return false;
+          if (Begin != other.Begin) return false;
+          if (End != other.End) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasText) hash ^= Text.GetHashCode();
+          if (HasBegin) hash ^= Begin.GetHashCode();
+          if (HasEnd) hash ^= End.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (HasText) {
+            output.WriteRawTag(10);
+            output.WriteString(Text);
+          }
+          if (HasBegin) {
+            output.WriteRawTag(16);
+            output.WriteInt32(Begin);
+          }
+          if (HasEnd) {
+            output.WriteRawTag(24);
+            output.WriteInt32(End);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasText) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
+          }
+          if (HasBegin) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Begin);
+          }
+          if (HasEnd) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(End);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(MatchLocation other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasText) {
+            Text = other.Text;
+          }
+          if (other.HasBegin) {
+            Begin = other.Begin;
+          }
+          if (other.HasEnd) {
+            End = other.End;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                Text = input.ReadString();
+                break;
+              }
+              case 16: {
+                Begin = input.ReadInt32();
+                break;
+              }
+              case 24: {
+                End = input.ReadInt32();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class Match : pb::IMessage<Match> {
+        private static readonly pb::MessageParser<Match> _parser = new pb::MessageParser<Match>(() => new Match());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Match> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Match() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Match(Match other) : this() {
+          _hasBits0 = other._hasBits0;
+          sentence_ = other.sentence_;
+          match_ = other.match_ != null ? other.match_.Clone() : null;
+          group_ = other.group_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Match Clone() {
+          return new Match(this);
+        }
+
+        /// <summary>Field number for the "sentence" field.</summary>
+        public const int SentenceFieldNumber = 1;
+        private readonly static int SentenceDefaultValue = 0;
+
+        private int sentence_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int Sentence {
+          get { if ((_hasBits0 & 1) != 0) { return sentence_; } else { return SentenceDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            sentence_ = value;
+          }
+        }
+        /// <summary>Gets whether the "sentence" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasSentence {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "sentence" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearSentence() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "match" field.</summary>
+        public const int Match_FieldNumber = 2;
+        private global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation match_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation Match_ {
+          get { return match_; }
+          set {
+            match_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "group" field.</summary>
+        public const int GroupFieldNumber = 3;
+        private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation> _repeated_group_codec
+            = pb::FieldCodec.ForMessage(26, global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation.Parser);
+        private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation> group_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation> Group {
+          get { return group_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Match);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Match other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Sentence != other.Sentence) return false;
+          if (!object.Equals(Match_, other.Match_)) return false;
+          if(!group_.Equals(other.group_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasSentence) hash ^= Sentence.GetHashCode();
+          if (match_ != null) hash ^= Match_.GetHashCode();
+          hash ^= group_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (HasSentence) {
+            output.WriteRawTag(8);
+            output.WriteInt32(Sentence);
+          }
+          if (match_ != null) {
+            output.WriteRawTag(18);
+            output.WriteMessage(Match_);
+          }
+          group_.WriteTo(output, _repeated_group_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasSentence) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(Sentence);
+          }
+          if (match_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Match_);
+          }
+          size += group_.CalculateSize(_repeated_group_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Match other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasSentence) {
+            Sentence = other.Sentence;
+          }
+          if (other.match_ != null) {
+            if (match_ == null) {
+              Match_ = new global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation();
+            }
+            Match_.MergeFrom(other.Match_);
+          }
+          group_.Add(other.group_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                Sentence = input.ReadInt32();
+                break;
+              }
+              case 18: {
+                if (match_ == null) {
+                  Match_ = new global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.MatchLocation();
+                }
+                input.ReadMessage(Match_);
+                break;
+              }
+              case 26: {
+                group_.AddEntriesFrom(input, _repeated_group_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+      public sealed partial class PatternMatch : pb::IMessage<PatternMatch> {
+        private static readonly pb::MessageParser<PatternMatch> _parser = new pb::MessageParser<PatternMatch>(() => new PatternMatch());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<PatternMatch> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public PatternMatch() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public PatternMatch(PatternMatch other) : this() {
+          match_ = other.match_.Clone();
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public PatternMatch Clone() {
+          return new PatternMatch(this);
+        }
+
+        /// <summary>Field number for the "match" field.</summary>
+        public const int MatchFieldNumber = 1;
+        private static readonly pb::FieldCodec<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.Match> _repeated_match_codec
+            = pb::FieldCodec.ForMessage(10, global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.Match.Parser);
+        private readonly pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.Match> match_ = new pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.Match>();
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<global::Edu.Stanford.Nlp.Pipeline.TokensRegexResponse.Types.Match> Match {
+          get { return match_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as PatternMatch);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(PatternMatch other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!match_.Equals(other.match_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= match_.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          match_.WriteTo(output, _repeated_match_codec);
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += match_.CalculateSize(_repeated_match_codec);
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(PatternMatch other) {
+          if (other == null) {
+            return;
+          }
+          match_.Add(other.match_);
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                match_.AddEntriesFrom(input, _repeated_match_codec);
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
 
   }
 
