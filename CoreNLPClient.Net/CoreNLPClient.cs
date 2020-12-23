@@ -36,6 +36,10 @@
         private string[] _args;
         private JObject _kwargs;
 
+        private object _annotators;
+        private object _properties;
+        private string _outputFormat;
+
         private JObject _srvPropsFile;
         private JObject _srvStartInfo;
 
@@ -68,6 +72,10 @@
             _classPath = classPath;
             _args = args;
             _kwargs = kwargs;
+
+            _annotators = annotators;
+            _properties = properties;
+            _outputFormat = outputFormat;
 
             var uri = new Uri(_endPoint);
             _host = uri.Host;
@@ -104,7 +112,13 @@
             // 3. Additional properties corresponding to properties(client side)
             // 4. Special case specific properties: annotators, output_format(client side)
 
-            JObject requestProperties = null;
+            var requestProperties = new JObject();
+
+            // Start with client defaults
+            if (_annotators != null)
+                requestProperties["annotators"] = Ann2Str(_annotators);
+            if (!string.IsNullOrEmpty(_outputFormat))
+                requestProperties["outputFormat"] = _outputFormat;
 
             // Set properties for server call
             // First look for a cached default properties set
@@ -121,8 +135,6 @@
                 else
                     requestProperties = new JObject(_propsCache[propertiesKey]);
             }
-            else
-                requestProperties = new JObject();
 
             // Add on custom properties for this request
             if (properties == null)
@@ -131,17 +143,7 @@
 
             // If annotators list is specified, override with that
             if (annotators != null)
-            {
-                var annStr = annotators as string;
-                if (!string.IsNullOrEmpty(annStr))
-                    requestProperties["annotators"] = annStr;
-                else
-                {
-                    var annLst = annotators as string[];
-                    if (annLst != null)
-                        requestProperties["annotators"] = string.Join(",", annLst);
-                }
-            }
+                requestProperties["annotators"] = Ann2Str(annotators);
 
             // Always send an output format with request
             // In some scenario's the server's default output format is unknown, so default to serialized
@@ -198,12 +200,9 @@
 
             if (queryString == null)
             {
-                var props = new JObject();
-                var outputFormat = DefaultOutputFormat;
-
-                if (properties["outputFormat"] != null)
-                    outputFormat = properties["outputFormat"].ToString();
-                props.Add("outputFormat", outputFormat);
+                var props = new JObject(properties);
+                if (props["outputFormat"] == null)
+                    props.Add("outputFormat", DefaultOutputFormat);                
 
                 queryString = HttpUtility.ParseQueryString(string.Empty);
                 queryString.Add("properties", props.ToString());                
@@ -282,6 +281,19 @@
                 if (File.Exists(propsFile))
                     File.Delete(propsFile);
             }
+        }
+
+        private string Ann2Str(object annotators)
+        {
+            var annStr = annotators as string;
+            if (!string.IsNullOrEmpty(annStr))
+                return annStr;
+
+            var annLst = annotators as string[];
+            if (annLst != null)
+                return string.Join(",", annLst);
+
+            return string.Empty;
         }
 
         private dynamic Regex(string path, string text, string pattern, bool filter, object annotators = null, JObject properties = null)
