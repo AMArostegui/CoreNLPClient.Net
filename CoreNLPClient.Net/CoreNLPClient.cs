@@ -13,6 +13,13 @@
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
 
+    public enum StartServer
+    {
+        DontStart,
+        ForceStart,
+        TryStart
+    }
+
     public class CoreNLPClient : RobustService, IDisposable
     {
         public const string DefaultEndpoint = "http://localhost:9000";
@@ -25,11 +32,10 @@
         public const int DefaultMaxCharLength = 100000;
         public const string DefaultSerializer = "edu.stanford.nlp.pipeline.ProtobufAnnotationSerializer";
 
-        private bool _startServer;
+        private StartServer _startServer;
         private int _timeout;
         private int _threads;
         private string _memory;
-        private bool _beQuiet;
         private int _maxCharLength;
         private bool _preLoad;
         private string _classPath;
@@ -46,7 +52,7 @@
         private JObject _propsCache;
 
         public CoreNLPClient(
-            bool startServer = true,
+            StartServer startServer = StartServer.TryStart,
             string endPoint = DefaultEndpoint,
             int timeout = DefaultTimeout,
             int threads = DefaultThreads,
@@ -54,7 +60,7 @@
             object properties = null,
             string outputFormat = DefaultOutputFormat,
             string memory = DefaultMemory,
-            bool beQuiet = true,
+            bool beQuiet = false,
             int maxCharLength = DefaultMaxCharLength,
             bool preLoad = true,
             string classPath = "",
@@ -355,8 +361,10 @@
 
         private void Init(object properties, object annotators, string outputFormat)
         {
-            if (!_startServer)
+            if (_startServer == StartServer.DontStart)
                 return;
+
+            _ignoreBindingError = _startServer == StartServer.TryStart;
 
             SetupDefaultServerProps(properties, annotators, outputFormat);
 
@@ -376,6 +384,10 @@
 
             Debug.Assert(!string.IsNullOrEmpty(classPath), "Classpath variable, used to locate CoreNLP server, is undefined");
             classPath += "/*";
+
+            // Strangely, _beQuiet variable is used with a dual purpose. 
+            //      1) Mute stdout, stderr. See: RobustService.Start()
+            //      2) Mute mirroring input data. See: https://stanfordnlp.github.io/CoreNLP/corenlp-server.html#command-line-flags
 
             _procName = "java";
             _procArgs = $"-Xmx{_memory}" +

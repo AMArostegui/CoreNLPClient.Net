@@ -9,7 +9,7 @@ print('')
 
 text = 'Chris Manning is a nice person. Chris wrote a simple sentence. He also gives oranges to people.'
 
-with CoreNLPClient(start_server=StartServer.DONT_START, annotators=['tokenize','ssplit','pos','lemma','ner', 'parse', 'depparse','coref'], timeout=30000, memory='8G') as client:
+with CoreNLPClient(start_server=StartServer.TRY_START, annotators=['tokenize','ssplit','pos','lemma','ner', 'parse', 'depparse','coref'], timeout=30000, memory='8G') as client:
     ann = client.annotate(text=text)
     sentence = ann.sentence[0] 
 

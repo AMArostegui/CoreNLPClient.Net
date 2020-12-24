@@ -29,17 +29,22 @@
         protected string _host;
         protected int _port;
 
+        protected bool _beQuiet;
+
+        protected bool _ignoreBindingError;
         private Process _srvProc;
-        private bool _isActive;
+        private bool _isActive;        
 
         public RobustService()
         {
             _isActive = false;
+            _beQuiet = false;
+            _ignoreBindingError = false;
         }
 
         public bool IsAlive()
         {
-            if (_srvProc != null && _srvProc.HasExited)                
+            if (!_ignoreBindingError && _srvProc != null && _srvProc.HasExited)                
                 return false;
 
             var req = (HttpWebRequest)WebRequest.Create(_endPoint + "/ping");
@@ -111,16 +116,19 @@
             }
             catch (SocketException)
             {
+                if (_ignoreBindingError)
+                {
+                    _srvProc = null;
+                    return;
+                }
+
                 throw new PermanentlyFailedException($"Error: unable to start the CoreNLP server on port {_port} (possibly something is already running there)");
             }
-
-            const bool Hidden = true;
 
             _srvProc = new Process();
             _srvProc.StartInfo.FileName = _procName;
             _srvProc.StartInfo.Arguments = _procArgs;
-            _srvProc.StartInfo.CreateNoWindow = Hidden ? true : false;
-            _srvProc.StartInfo.WindowStyle = Hidden ? ProcessWindowStyle.Hidden : ProcessWindowStyle.Normal;
+            _srvProc.StartInfo.RedirectStandardError = _beQuiet;
             _srvProc.Start();
         }
 

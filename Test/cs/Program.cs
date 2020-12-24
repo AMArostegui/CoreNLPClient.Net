@@ -18,7 +18,7 @@ namespace Test
             var text = "Chris Manning is a nice person. Chris wrote a simple sentence. He also gives oranges to people.";
 
             using (var client = new CoreNLPClient(
-                startServer: false,
+                startServer: StartServer.TryStart,
                 annotators: new string[] { "tokenize", "ssplit", "pos", "lemma", "ner", "parse", "depparse", "coref" },
                 timeout: 30000,
                 memory: "8G"))
@@ -95,7 +95,7 @@ namespace Test
                 //args: new string[] {"ssl"},
                 //kwargs: JObject.Parse("{ \"username\": \"username\", \"password\": \"password\" }"),
                 preLoad: false,
-                startServer: true,
+                startServer: StartServer.TryStart,
                 annotators: new string[] { "tokenize", "ssplit", "pos", "lemma", "ner", "parse", "depparse", "coref" },
                 //properties: JObject.Parse("{\"annotators\": \"tokenize,ssplit,pos,lemma,ner,parse,depparse,coref\", \"tokenize.language\": \"en\"}"),
                 //properties: "english",
