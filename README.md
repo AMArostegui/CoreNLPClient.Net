@@ -20,13 +20,14 @@ Furthermore, it should also work with **.NET Framework 4.7.2** and above.
 
 ## Limitations
 
-The main goal was to be able to properly run at least the main Python example, altough almost all features of the client have been implemented.
+The main goal was to be able to properly run the main Python example; almost all features of the client have been implemented.
 
 However there are known limitations:
 
 * Redirection of *stdout*, *stderr* of Java Server is not implemented
 * Parameter *to_words* for methods *tokensregex, semgrex and tregex* in *stanza.server.client* is not implemented
 * kwargs parameters for CoreNLPClient (server_id, ssl, status_port,uriContext, strict, key, username, password, blacklist) should work, but have not been tried.
+* There's a known bug related to the use of `bequiet` parameter. When assigned true, queries will timeout if the server's been automatically started 
 
 ## Example
 

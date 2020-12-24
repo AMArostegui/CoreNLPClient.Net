@@ -383,11 +383,12 @@
                 classPath = Environment.GetEnvironmentVariable("CORENLP_HOME");
 
             Debug.Assert(!string.IsNullOrEmpty(classPath), "Classpath variable, used to locate CoreNLP server, is undefined");
-            classPath += "/*";
+            classPath += Path.DirectorySeparatorChar + "*";
 
             // Strangely, _beQuiet variable is used with a dual purpose. 
             //      1) Mute stdout, stderr. See: RobustService.Start()
             //      2) Mute mirroring input data. See: https://stanfordnlp.github.io/CoreNLP/corenlp-server.html#command-line-flags
+            // TODO: For some reason, queries will timeout when beQuiet==true. Yet to debug
 
             _procName = "java";
             _procArgs = $"-Xmx{_memory}" +
